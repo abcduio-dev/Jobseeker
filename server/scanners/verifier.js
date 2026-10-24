@@ -4,20 +4,36 @@
  * Automatically replaces dead or expired links with guaranteed active Seek/Portal search links.
  */
 
+// Known direct official employer careers portals
+const DIRECT_PORTALS = {
+  'ANZ Banking Group': 'https://www.anz.com.au/about-us/careers/',
+  'National Australia Bank (NAB)': 'https://www.nab.com.au/about-us/careers',
+  'Coles Group': 'https://www.colescareers.com.au/',
+  'REA Group': 'https://careers.rea-group.com/',
+  'SEEK Limited': 'https://www.seek.com.au/seek-jobs/in-All-Melbourne-VIC?sortmode=ListedDate',
+  'Canva': 'https://www.canva.com/careers/',
+  'Telstra': 'https://careers.telstra.com/',
+  'Medibank Private': 'https://careers.medibank.com.au',
+  'Department of Transport and Planning VIC': 'https://careers.vic.gov.au/',
+  'Monash University': 'https://www.monash.edu/jobs',
+  'Atlassian': 'https://www.atlassian.com/company/careers',
+  'Australia Post': 'https://jobs.auspost.com.au'
+};
+
 function buildGuaranteedSeekSearchUrl(title, company = '') {
-  // Clean title: remove hyphens, parentheticals, and slashes
-  const cleanTitle = (title || '')
-    .replace(/\s*[-–|/]\s*/g, ' ')
+  // Strip out extra suffixes, dashes, parentheses and sub-teams
+  let cleanTitle = (title || '')
+    .split(/[-–|/]/)[0] // Take first part before dash/slash
     .replace(/[()]/g, '')
     .replace(/\s+/g, ' ')
     .trim();
 
-  // Normalize company name
+  // Shorten company to core brand
   let cleanCompany = (company || '').trim();
   if (cleanCompany.includes('ANZ')) cleanCompany = 'ANZ';
   else if (cleanCompany.includes('NAB') || cleanCompany.includes('National Australia Bank')) cleanCompany = 'NAB';
   else if (cleanCompany.includes('Coles')) cleanCompany = 'Coles';
-  else if (cleanCompany.includes('REA Group') || cleanCompany.includes('REA')) cleanCompany = 'REA Group';
+  else if (cleanCompany.includes('REA')) cleanCompany = 'REA Group';
   else if (cleanCompany.includes('SEEK')) cleanCompany = 'SEEK';
   else if (cleanCompany.includes('Telstra')) cleanCompany = 'Telstra';
   else if (cleanCompany.includes('Australia Post')) cleanCompany = 'Australia Post';
@@ -26,9 +42,10 @@ function buildGuaranteedSeekSearchUrl(title, company = '') {
   else if (cleanCompany.includes('Bunnings')) cleanCompany = 'Bunnings';
   else if (cleanCompany.includes('EY')) cleanCompany = 'EY';
   else if (cleanCompany.includes('AGL')) cleanCompany = 'AGL';
+  else if (cleanCompany.includes('Downer')) cleanCompany = 'Downer';
 
   const query = `${cleanTitle} ${cleanCompany}`.trim();
-  // CRITICAL FIX: Seek search endpoint is /jobs?keywords=..., NOT /job/search!
+  // Valid Seek search URL with /jobs?keywords=..., NOT /job/search!
   return `https://www.seek.com.au/jobs?keywords=${encodeURIComponent(query)}&where=All+Melbourne+VIC&sortmode=ListedDate`;
 }
 
@@ -36,22 +53,6 @@ function buildGuaranteedLinkedInSearchUrl(title, company = '') {
   const query = `${title} ${company}`.trim();
   return `https://au.linkedin.com/jobs/search?keywords=${encodeURIComponent(query)}&location=Melbourne%2C%20Victoria%2C%20Australia`;
 }
-
-// Known direct official employer careers portals
-const DIRECT_PORTALS = {
-  'ANZ Banking Group': 'https://www.anz.com.au/about-us/careers/search-jobs/?keyword=Data+Analyst',
-  'National Australia Bank (NAB)': 'https://www.nab.com.au/about-us/careers/search-jobs?q=Data',
-  'Coles Group': 'https://www.colescareers.com.au/en/search/?search-keyword=Data',
-  'REA Group': 'https://careers.rea-group.com/jobs/search?q=Data',
-  'SEEK Limited': 'https://www.seek.com.au/seek-jobs/in-All-Melbourne-VIC?sortmode=ListedDate',
-  'Canva': 'https://www.canva.com/careers/jobs/?search=Data',
-  'Telstra': 'https://careers.telstra.com/en/search/?search-keyword=Data',
-  'Medibank Private': 'https://www.medibank.com.au/about/careers/search-jobs/?keyword=Data',
-  'Department of Transport and Planning VIC': 'https://careers.vic.gov.au/jobs?keyword=Data%20Analyst&location=Melbourne',
-  'Monash University': 'https://careers.pageuppeople.com/513/cw/en/filter/?search-keyword=Data',
-  'Atlassian': 'https://www.atlassian.com/company/careers/all-jobs?search=Data&location=Australia',
-  'Australia Post': 'https://auspost.com.au/about-us/careers/search-our-jobs?keyword=Data'
-};
 
 function verifyAndNormalizeJob(job) {
   const cleanTitle = (job.title || '').trim();
@@ -64,15 +65,17 @@ function verifyAndNormalizeJob(job) {
   let verifiedSource = job.source || 'Seek AU';
 
   // 1. Direct employer career portal match
-  if (DIRECT_PORTALS[cleanCompany]) {
-    return {
-      ...job,
-      url: DIRECT_PORTALS[cleanCompany],
-      backupUrl: guaranteedSeekUrl,
-      verified: true,
-      verifiedSource: 'Official Company Careers',
-      verifiedAt: new Date().toISOString()
-    };
+  for (const [key, portalUrl] of Object.entries(DIRECT_PORTALS)) {
+    if (cleanCompany.includes(key) || key.includes(cleanCompany)) {
+      return {
+        ...job,
+        url: portalUrl,
+        backupUrl: guaranteedSeekUrl,
+        verified: true,
+        verifiedSource: 'Official Company Careers',
+        verifiedAt: new Date().toISOString()
+      };
+    }
   }
 
   // 2. Fix broken Seek URLs: any URL with /job/search or dummy IDs must be converted to /jobs?keywords=...

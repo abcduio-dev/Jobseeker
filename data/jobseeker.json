@@ -89,7 +89,7 @@
       "status": "new",
       "firstSeenAt": "2026-10-24T00:49:56.694Z",
       "lastSeenAt": "2026-10-24T00:49:56.694Z",
-      "backupUrl": "https://www.seek.com.au/jobs?keywords=Senior%20Lead%20Analytics%20Engineer%20Insight%20Timer&where=All+Melbourne+VIC&sortmode=ListedDate",
+      "backupUrl": "https://www.seek.com.au/jobs?keywords=Senior%20Insight%20Timer&where=All+Melbourne+VIC&sortmode=ListedDate",
       "verified": true,
       "verifiedSource": "LinkedIn AU Live"
     },
@@ -169,7 +169,7 @@
       "status": "new",
       "firstSeenAt": "2026-10-24T00:49:56.694Z",
       "lastSeenAt": "2026-10-24T00:49:56.694Z",
-      "backupUrl": "https://www.seek.com.au/jobs?keywords=Senior%20Backend%20Engineer%20Python%20GCP%20Airflow%20Aviato%20Consulting&where=All+Melbourne+VIC&sortmode=ListedDate",
+      "backupUrl": "https://www.seek.com.au/jobs?keywords=Senior%20Backend%20Engineer%20Python%20Aviato%20Consulting&where=All+Melbourne+VIC&sortmode=ListedDate",
       "verified": true,
       "verifiedSource": "LinkedIn AU Live"
     },
@@ -294,7 +294,7 @@
       "status": "new",
       "firstSeenAt": "2026-10-24T00:49:56.694Z",
       "lastSeenAt": "2026-10-24T00:49:56.694Z",
-      "backupUrl": "https://www.seek.com.au/jobs?keywords=Senior%20Data%20Analyst%20Workforce%20Planning%20ALH%20Hotels&where=All+Melbourne+VIC&sortmode=ListedDate",
+      "backupUrl": "https://www.seek.com.au/jobs?keywords=Senior%20Data%20Analyst%20ALH%20Hotels&where=All+Melbourne+VIC&sortmode=ListedDate",
       "verified": true,
       "verifiedSource": "LinkedIn AU Live"
     },
@@ -344,7 +344,7 @@
       "status": "new",
       "firstSeenAt": "2026-10-24T00:49:56.694Z",
       "lastSeenAt": "2026-10-24T00:49:56.694Z",
-      "backupUrl": "https://www.seek.com.au/jobs?keywords=Senior%20Consultant%20Data%20Engineer%20Melbourne%20Altis%20Consulting&where=All+Melbourne+VIC&sortmode=ListedDate",
+      "backupUrl": "https://www.seek.com.au/jobs?keywords=Senior%20Consultant%20Altis%20Consulting&where=All+Melbourne+VIC&sortmode=ListedDate",
       "verified": true,
       "verifiedSource": "LinkedIn AU Live"
     },
@@ -612,7 +612,7 @@
       "postDate": "2 days ago (2026-10-21)",
       "postedTimestamp": 1792612951528,
       "description": "Bridge the gap between data engineering and business analytics. Transform raw telecom event streams into clean, tested dbt models and semantic metrics layers in Google BigQuery.",
-      "url": "https://careers.telstra.com/en/search/?search-keyword=Data",
+      "url": "https://careers.telstra.com/",
       "source": "Official Company Careers",
       "tags": [
         "dbt",
@@ -640,7 +640,7 @@
       "postDate": "2 days ago (2026-10-21)",
       "postedTimestamp": 1792614579547,
       "description": "Deliver enterprise data lakehouse infrastructure on AWS with Databricks and PySpark. Drive data quality, CI/CD dataops, and secure regulatory reporting pipelines.",
-      "url": "https://www.nab.com.au/about-us/careers/search-jobs?q=Data",
+      "url": "https://www.nab.com.au/about-us/careers",
       "source": "Official Company Careers",
       "tags": [
         "AWS",
@@ -668,7 +668,7 @@
       "postDate": "2026-10-22",
       "postedTimestamp": 1792627200000,
       "description": "Join REA Group in Richmond, Victoria, Australia as a Senior Data Engineer (Data Business Partner). Focus on delivering impactful data analytics, business intelligence dashboards, and data-driven insights.",
-      "url": "https://careers.rea-group.com/jobs/search?q=Data",
+      "url": "https://careers.rea-group.com/",
       "source": "Official Company Careers",
       "tags": [
         "Melbourne",
@@ -706,7 +706,7 @@
       "status": "new",
       "firstSeenAt": "2026-10-24T00:49:56.694Z",
       "lastSeenAt": "2026-10-24T00:49:56.694Z",
-      "backupUrl": "https://www.seek.com.au/jobs?keywords=Senior%20Data%26AI%20Engineer%20Databricks%20Mantel&where=All+Melbourne+VIC&sortmode=ListedDate",
+      "backupUrl": "https://www.seek.com.au/jobs?keywords=Senior%20Data%26AI%20Engineer%20Mantel&where=All+Melbourne+VIC&sortmode=ListedDate",
       "verified": true,
       "verifiedSource": "LinkedIn AU Live"
     },
@@ -721,7 +721,7 @@
       "postDate": "Yesterday",
       "postedTimestamp": 1792698826246,
       "description": "Build petabyte-scale data pipelines supporting Jira and Confluence cloud telemetry. Deep expertise in Apache Spark, Kafka, AWS Kinesis, and automated data quality testing.",
-      "url": "https://www.atlassian.com/company/careers/all-jobs?search=Data&location=Australia",
+      "url": "https://www.atlassian.com/company/careers",
       "source": "Official Company Careers",
       "tags": [
         "Apache Spark",
@@ -734,7 +734,7 @@
       "status": "new",
       "firstSeenAt": "2026-10-24T00:49:56.694Z",
       "lastSeenAt": "2026-10-24T00:49:56.694Z",
-      "backupUrl": "https://www.seek.com.au/jobs?keywords=Data%20Engineer%20Streaming%20Analytics%20Atlassian&where=All+Melbourne+VIC&sortmode=ListedDate",
+      "backupUrl": "https://www.seek.com.au/jobs?keywords=Data%20Engineer%20Atlassian&where=All+Melbourne+VIC&sortmode=ListedDate",
       "verified": true,
       "verifiedSource": "Direct Employer Careers"
     },
@@ -749,7 +749,7 @@
       "postDate": "Yesterday",
       "postedTimestamp": 1792705755994,
       "description": "Analyze Melbourne public transport patronage, train punctuality, and smart ticketing (myki) data to optimize Victoria’s transit network. Strong GIS, SQL, and R/Python preferred.",
-      "url": "https://careers.vic.gov.au/jobs?keyword=Data%20Analyst&location=Melbourne",
+      "url": "https://careers.vic.gov.au/",
       "source": "Official Company Careers",
       "tags": [
         "SQL",
@@ -762,7 +762,7 @@
       "status": "new",
       "firstSeenAt": "2026-10-24T00:49:56.694Z",
       "lastSeenAt": "2026-10-24T00:49:56.694Z",
-      "backupUrl": "https://www.seek.com.au/jobs?keywords=Data%20Analyst%20Operations%20%26%20Transport%20Department%20of%20Transport%20and%20Planning%20VIC&where=All+Melbourne+VIC&sortmode=ListedDate",
+      "backupUrl": "https://www.seek.com.au/jobs?keywords=Data%20Analyst%20Department%20of%20Transport%20and%20Planning%20VIC&where=All+Melbourne+VIC&sortmode=ListedDate",
       "verified": true,
       "verifiedSource": "Direct Employer Careers"
     },
@@ -790,7 +790,7 @@
       "status": "new",
       "firstSeenAt": "2026-10-24T00:49:56.694Z",
       "lastSeenAt": "2026-10-24T00:49:56.694Z",
-      "backupUrl": "https://www.seek.com.au/jobs?keywords=Data%20Engineer%20Modern%20Data%20Stack%20SEEK&where=All+Melbourne+VIC&sortmode=ListedDate",
+      "backupUrl": "https://www.seek.com.au/jobs?keywords=Data%20Engineer%20SEEK&where=All+Melbourne+VIC&sortmode=ListedDate",
       "verified": true,
       "verifiedSource": "Seek AU (Verified Search)"
     },
@@ -830,7 +830,7 @@
       "postDate": "Yesterday",
       "postedTimestamp": 1792714413317,
       "description": "Work with realestate.com.au product and commercial teams to build automated Tableau and Power BI reporting suites. Strong BigQuery, SQL, and data storytelling skills required.",
-      "url": "https://careers.rea-group.com/jobs/search?q=Data",
+      "url": "https://careers.rea-group.com/",
       "source": "Official Company Careers",
       "tags": [
         "Tableau",
@@ -858,7 +858,7 @@
       "postDate": "Today",
       "postedTimestamp": 1792787078205,
       "description": "Deliver pricing analytics, parcel volume forecasting, and network optimization insights for Australia Post. Requires advanced SQL, financial modeling, and Power BI dashboard creation.",
-      "url": "https://auspost.com.au/about-us/careers/search-our-jobs?keyword=Data",
+      "url": "https://jobs.auspost.com.au",
       "source": "Official Company Careers",
       "tags": [
         "SQL",
@@ -885,7 +885,7 @@
       "postDate": "Today",
       "postedTimestamp": 1792787911765,
       "description": "Lead analytics initiatives across supply chain and Flybuys retail loyalty data. You will architect dimensional models in Azure Synapse, build Power BI apps, and mentor junior analysts.",
-      "url": "https://www.colescareers.com.au/en/search/?search-keyword=Data",
+      "url": "https://www.colescareers.com.au/",
       "source": "Official Company Careers",
       "tags": [
         "Power BI",
@@ -913,7 +913,7 @@
       "postDate": "Today",
       "postedTimestamp": 1792788994928,
       "description": "Drive conversion, retention, and subscription insights for global user segments. Strong SQL fluency, A/B testing methodology, and dashboarding in Looker or Mode required.",
-      "url": "https://www.canva.com/careers/jobs/?search=Data",
+      "url": "https://www.canva.com/careers/",
       "source": "Official Company Careers",
       "tags": [
         "SQL",
@@ -926,7 +926,7 @@
       "status": "new",
       "firstSeenAt": "2026-10-24T00:49:56.694Z",
       "lastSeenAt": "2026-10-24T00:49:56.694Z",
-      "backupUrl": "https://www.seek.com.au/jobs?keywords=Data%20Analyst%20Growth%20%26%20Marketing%20Canva&where=All+Melbourne+VIC&sortmode=ListedDate",
+      "backupUrl": "https://www.seek.com.au/jobs?keywords=Data%20Analyst%20Canva&where=All+Melbourne+VIC&sortmode=ListedDate",
       "verified": true,
       "verifiedSource": "Direct Employer Careers"
     },
@@ -941,7 +941,7 @@
       "postDate": "Today",
       "postedTimestamp": 1792791539146,
       "description": "Join the Data & Analytics Chapter at ANZ Collins Street. You will lead predictive customer churn modeling, transaction insights, and executive dashboards using SQL, Python, Snowflake, and Power BI.",
-      "url": "https://www.anz.com.au/about-us/careers/search-jobs/?keyword=Data+Analyst",
+      "url": "https://www.anz.com.au/about-us/careers/",
       "source": "Official Company Careers",
       "tags": [
         "SQL",
@@ -954,7 +954,7 @@
       "status": "new",
       "firstSeenAt": "2026-10-24T00:49:56.694Z",
       "lastSeenAt": "2026-10-24T00:49:56.694Z",
-      "backupUrl": "https://www.seek.com.au/jobs?keywords=Senior%20Data%20Analyst%20Customer%20Analytics%20ANZ&where=All+Melbourne+VIC&sortmode=ListedDate",
+      "backupUrl": "https://www.seek.com.au/jobs?keywords=Senior%20Data%20Analyst%20ANZ&where=All+Melbourne+VIC&sortmode=ListedDate",
       "verified": true,
       "verifiedSource": "Seek AU (Guaranteed Active)"
     }

@@ -115,25 +115,25 @@ class Database {
   }
 
   addOrUpdateJobs(newJobs) {
-    const existingMap = new Map();
-    this.data.jobs.forEach((job, index) => {
-      existingMap.set(job.id, index);
-      // Secondary key for deduplication: normalized title + company
+    const jobById = new Map();
+    const jobByNormKey = new Map();
+
+    for (const job of this.data.jobs) {
+      if (job.id) jobById.set(job.id, job);
       const normKey = `${(job.title || '').toLowerCase().trim()}:::${(job.company || '').toLowerCase().trim()}`;
-      existingMap.set(normKey, index);
-    });
+      jobByNormKey.set(normKey, job);
+    }
 
     let addedCount = 0;
     let updatedCount = 0;
     const nowIso = new Date().toISOString();
+    const newlyAdded = [];
 
     for (const job of newJobs) {
       const normKey = `${(job.title || '').toLowerCase().trim()}:::${(job.company || '').toLowerCase().trim()}`;
-      const existingIndex = existingMap.has(job.id) ? existingMap.get(job.id) : existingMap.get(normKey);
+      const existing = (job.id && jobById.get(job.id)) || jobByNormKey.get(normKey);
 
-      if (existingIndex !== undefined) {
-        // Update existing job metadata if needed
-        const existing = this.data.jobs[existingIndex];
+      if (existing) {
         existing.lastSeenAt = nowIso;
         if (job.salary) existing.salary = job.salary;
         if (job.salaryMin) existing.salaryMin = job.salaryMin;
@@ -151,11 +151,15 @@ class Database {
           firstSeenAt: nowIso,
           lastSeenAt: nowIso
         };
-        this.data.jobs.unshift(enriched);
-        existingMap.set(job.id, this.data.jobs.length - 1);
-        existingMap.set(normKey, this.data.jobs.length - 1);
+        newlyAdded.push(enriched);
+        if (job.id) jobById.set(job.id, enriched);
+        jobByNormKey.set(normKey, enriched);
         addedCount++;
       }
+    }
+
+    if (newlyAdded.length > 0) {
+      this.data.jobs = [...newlyAdded, ...this.data.jobs];
     }
 
     if (addedCount > 0 || updatedCount > 0) {

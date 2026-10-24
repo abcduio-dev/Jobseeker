@@ -47,6 +47,15 @@ const API = {
     return res.json();
   },
 
+  async verifyAllLinks() {
+    const res = await fetch('/api/jobs/verify', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' }
+    });
+    if (!res.ok) throw new Error('Verification failed');
+    return res.json();
+  },
+
   async sendTestEmail(to) {
     const res = await fetch('/api/email/test', {
       method: 'POST',

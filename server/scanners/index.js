@@ -2,6 +2,7 @@ const { scrapeLinkedInJobs } = require('./linkedin');
 const { fetchAdzunaJobs } = require('./adzuna');
 const { fetchRemotiveJobs } = require('./remotive');
 const { getMelbourneSeedJobs } = require('./melbourne_seed');
+const { verifyAllJobs } = require('./verifier');
 const db = require('../db');
 
 async function runJobScan(customOptions = {}) {
@@ -98,8 +99,11 @@ async function runJobScan(customOptions = {}) {
   // Sort by posted timestamp (newest first)
   uniqueJobs.sort((a, b) => (b.postedTimestamp || 0) - (a.postedTimestamp || 0));
 
+  // Verify and normalize all URLs to ensure 100% active sources
+  const verifiedJobs = await verifyAllJobs(uniqueJobs);
+
   // Save to database
-  const saveResult = db.addOrUpdateJobs(uniqueJobs);
+  const saveResult = db.addOrUpdateJobs(verifiedJobs);
   const durationMs = Date.now() - startTime;
 
   const scanRecord = {

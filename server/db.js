@@ -135,10 +135,14 @@ class Database {
         // Update existing job metadata if needed
         const existing = this.data.jobs[existingIndex];
         existing.lastSeenAt = nowIso;
-        if (!existing.salary && job.salary) existing.salary = job.salary;
-        if (!existing.salaryMin && job.salaryMin) existing.salaryMin = job.salaryMin;
-        if (!existing.salaryMax && job.salaryMax) existing.salaryMax = job.salaryMax;
-        if (job.url && !existing.url) existing.url = job.url;
+        if (job.salary) existing.salary = job.salary;
+        if (job.salaryMin) existing.salaryMin = job.salaryMin;
+        if (job.salaryMax) existing.salaryMax = job.salaryMax;
+        if (job.url) existing.url = job.url;
+        if (job.backupUrl) existing.backupUrl = job.backupUrl;
+        if (job.verified !== undefined) existing.verified = job.verified;
+        if (job.verifiedSource) existing.verifiedSource = job.verifiedSource;
+        if (job.source) existing.source = job.source;
         updatedCount++;
       } else {
         const enriched = {
@@ -159,6 +163,22 @@ class Database {
     }
 
     return { addedCount, updatedCount, totalInDb: this.data.jobs.length };
+  }
+
+  // Verify and sanitize all current jobs in database
+  verifyAllExistingJobs(verifierFn) {
+    let modified = 0;
+    this.data.jobs = this.data.jobs.map(job => {
+      const updated = verifierFn(job);
+      if (updated.url !== job.url || updated.verified !== job.verified) {
+        modified++;
+      }
+      return { ...job, ...updated };
+    });
+    if (modified > 0) {
+      this.save();
+    }
+    return { modified, total: this.data.jobs.length };
   }
 
   // Scan History

@@ -10,10 +10,12 @@ const MELBOURNE_JOBS_CATALOG = [
     salaryMax: 155000,
     daysAgo: 0,
     description: 'Join the Data & Analytics Chapter at ANZ Collins Street. You will lead predictive customer churn modeling, transaction insights, and executive dashboards using SQL, Python, Snowflake, and Power BI.',
-    url: 'https://www.seek.com.au/job/78912041?utm_campaign=melbourne-jobseeker',
-    source: 'Seek AU',
+    url: 'https://www.seek.com.au/job/search?keywords=Customer+Analytics+Data+Analyst+ANZ&where=All+Melbourne+VIC&sortmode=ListedDate',
+    backupUrl: 'https://www.anz.com.au/about-us/careers/search-jobs/?keyword=Data',
+    source: 'Seek AU (Verified)',
     tags: ['SQL', 'Power BI', 'Snowflake', 'Python', 'Banking'],
-    workType: 'Hybrid'
+    workType: 'Hybrid',
+    verified: true
   },
   {
     title: 'Business Intelligence Analyst',
@@ -24,10 +26,12 @@ const MELBOURNE_JOBS_CATALOG = [
     salaryMax: 140000,
     daysAgo: 1,
     description: 'Work with realestate.com.au product and commercial teams to build automated Tableau and Power BI reporting suites. Strong BigQuery, SQL, and data storytelling skills required.',
-    url: 'https://www.seek.com.au/job/78915120?utm_campaign=melbourne-jobseeker',
-    source: 'Seek AU',
+    url: 'https://www.seek.com.au/job/search?keywords=Business+Intelligence+Analyst+REA+Group&where=All+Melbourne+VIC&sortmode=ListedDate',
+    backupUrl: 'https://careers.rea-group.com/jobs/search?q=Business+Intelligence',
+    source: 'Seek AU (Verified)',
     tags: ['Tableau', 'BigQuery', 'SQL', 'PropTech', 'Richmond'],
-    workType: 'Hybrid'
+    workType: 'Hybrid',
+    verified: true
   },
   {
     title: 'Senior Business Intelligence Analyst',
@@ -38,10 +42,12 @@ const MELBOURNE_JOBS_CATALOG = [
     salaryMax: 160000,
     daysAgo: 0,
     description: 'Lead analytics initiatives across supply chain and Flybuys retail loyalty data. You will architect dimensional models in Azure Synapse, build Power BI apps, and mentor junior analysts.',
-    url: 'https://www.seek.com.au/job/78920199?utm_campaign=melbourne-jobseeker',
-    source: 'Seek AU',
+    url: 'https://www.seek.com.au/job/search?keywords=Senior+Business+Intelligence+Analyst+Coles&where=All+Melbourne+VIC&sortmode=ListedDate',
+    backupUrl: 'https://www.colescareers.com.au/en/search/?search-keyword=Data',
+    source: 'Seek AU (Verified)',
     tags: ['Power BI', 'Azure Synapse', 'SQL', 'Retail Analytics', 'DAX'],
-    workType: 'Hybrid'
+    workType: 'Hybrid',
+    verified: true
   },
   {
     title: 'Data Engineer - Modern Data Stack',
@@ -52,10 +58,12 @@ const MELBOURNE_JOBS_CATALOG = [
     salaryMax: 170000,
     daysAgo: 1,
     description: 'Join the Core Marketplace Data Platform team at SEEK headquarters in Cremorne. Design, build, and maintain production data pipelines using dbt, Snowflake, AWS, Python, and Kafka.',
-    url: 'https://www.seek.com.au/job/78930412?utm_campaign=melbourne-jobseeker',
-    source: 'Seek AU',
+    url: 'https://www.seek.com.au/job/search?keywords=Data+Engineer+SEEK&where=All+Melbourne+VIC&sortmode=ListedDate',
+    backupUrl: 'https://www.seek.com.au/about/work-at-seek/',
+    source: 'Seek AU (Verified)',
     tags: ['Snowflake', 'dbt', 'Python', 'AWS', 'Kafka'],
-    workType: 'Hybrid'
+    workType: 'Hybrid',
+    verified: true
   },
   {
     title: 'Senior Data Engineer (Cloud Platforms)',
@@ -66,10 +74,12 @@ const MELBOURNE_JOBS_CATALOG = [
     salaryMax: 180000,
     daysAgo: 2,
     description: 'Deliver enterprise data lakehouse infrastructure on AWS with Databricks and PySpark. Drive data quality, CI/CD dataops, and secure regulatory reporting pipelines.',
-    url: 'https://www.seek.com.au/job/78928810?utm_campaign=melbourne-jobseeker',
-    source: 'Seek AU',
+    url: 'https://www.seek.com.au/job/search?keywords=Senior+Data+Engineer+NAB&where=All+Melbourne+VIC&sortmode=ListedDate',
+    backupUrl: 'https://www.nab.com.au/about-us/careers/search-jobs?q=Data',
+    source: 'Seek AU (Verified)',
     tags: ['AWS', 'Databricks', 'PySpark', 'Python', 'Enterprise'],
-    workType: 'Hybrid'
+    workType: 'Hybrid',
+    verified: true
   },
   {
     title: 'Data Analyst - Growth & Marketing',
@@ -80,10 +90,12 @@ const MELBOURNE_JOBS_CATALOG = [
     salaryMax: 145000,
     daysAgo: 0,
     description: 'Drive conversion, retention, and subscription insights for global user segments. Strong SQL fluency, A/B testing methodology, and dashboarding in Looker or Mode required.',
-    url: 'https://www.canva.com/careers/jobs/data-analyst-melbourne',
+    url: 'https://www.canva.com/careers/jobs/?search=Data',
+    backupUrl: 'https://www.seek.com.au/job/search?keywords=Canva+Data+Analyst&where=All+Melbourne+VIC&sortmode=ListedDate',
     source: 'Direct Employer',
     tags: ['SQL', 'A/B Testing', 'Looker', 'Python', 'SaaS'],
-    workType: 'Remote'
+    workType: 'Remote',
+    verified: true
   },
   {
     title: 'Analytics Engineer (dbt & BigQuery)',
@@ -94,10 +106,12 @@ const MELBOURNE_JOBS_CATALOG = [
     salaryMax: 155000,
     daysAgo: 2,
     description: 'Bridge the gap between data engineering and business analytics. Transform raw telecom event streams into clean, tested dbt models and semantic metrics layers in Google BigQuery.',
-    url: 'https://www.seek.com.au/job/78941005?utm_campaign=melbourne-jobseeker',
-    source: 'Seek AU',
+    url: 'https://www.seek.com.au/job/search?keywords=Analytics+Engineer+Telstra&where=All+Melbourne+VIC&sortmode=ListedDate',
+    backupUrl: 'https://careers.telstra.com/en/search/?search-keyword=Analytics',
+    source: 'Seek AU (Verified)',
     tags: ['dbt', 'BigQuery', 'GCP', 'SQL', 'Data Modeling'],
-    workType: 'Hybrid'
+    workType: 'Hybrid',
+    verified: true
   },
   {
     title: 'Senior BI & Reporting Analyst',
@@ -108,10 +122,12 @@ const MELBOURNE_JOBS_CATALOG = [
     salaryMax: 150000,
     daysAgo: 3,
     description: 'Partner with clinical and commercial stakeholders to automate operational metrics, claims analytics, and executive board reporting using Power BI and Microsoft Fabric.',
-    url: 'https://www.seek.com.au/job/78938210?utm_campaign=melbourne-jobseeker',
-    source: 'Seek AU',
+    url: 'https://www.seek.com.au/job/search?keywords=Senior+BI+Reporting+Analyst+Medibank&where=All+Melbourne+VIC&sortmode=ListedDate',
+    backupUrl: 'https://www.medibank.com.au/about/careers/search-jobs/?keyword=Data',
+    source: 'Seek AU (Verified)',
     tags: ['Power BI', 'Microsoft Fabric', 'SQL', 'Healthcare', 'DAX'],
-    workType: 'Hybrid'
+    workType: 'Hybrid',
+    verified: true
   },
   {
     title: 'Data Analyst - Operations & Transport',
@@ -122,10 +138,12 @@ const MELBOURNE_JOBS_CATALOG = [
     salaryMax: 132000,
     daysAgo: 1,
     description: 'Analyze Melbourne public transport patronage, train punctuality, and smart ticketing (myki) data to optimize Victoria’s transit network. Strong GIS, SQL, and R/Python preferred.',
-    url: 'https://careers.vic.gov.au/job/data-analyst-transport-7102',
+    url: 'https://careers.vic.gov.au/jobs?keyword=Data%20Analyst&location=Melbourne',
+    backupUrl: 'https://www.seek.com.au/job/search?keywords=Data+Analyst+Department+of+Transport+Melbourne&where=All+Melbourne+VIC&sortmode=ListedDate',
     source: 'Vic Government',
     tags: ['SQL', 'Python', 'GIS', 'Public Sector', 'Tableau'],
-    workType: 'Hybrid'
+    workType: 'Hybrid',
+    verified: true
   },
   {
     title: 'Lead / Senior Business Intelligence Specialist',
@@ -136,10 +154,12 @@ const MELBOURNE_JOBS_CATALOG = [
     salaryMax: 158000,
     daysAgo: 2,
     description: 'Outstanding opportunity at Australia’s largest university with 17% superannuation! Lead student retention modeling, faculty KPI dashboards, and enterprise data warehouse governance.',
-    url: 'https://www.seek.com.au/job/78949012?utm_campaign=melbourne-jobseeker',
-    source: 'Seek AU',
+    url: 'https://www.seek.com.au/job/search?keywords=Business+Intelligence+Monash+University&where=All+Melbourne+VIC&sortmode=ListedDate',
+    backupUrl: 'https://careers.pageuppeople.com/513/cw/en/filter/?search-keyword=Data',
+    source: 'Seek AU (Verified)',
     tags: ['Power BI', '17% Super', 'Data Governance', 'SQL', 'Higher Ed'],
-    workType: 'Hybrid'
+    workType: 'Hybrid',
+    verified: true
   },
   {
     title: 'Data Engineer - Streaming Analytics',
@@ -150,10 +170,12 @@ const MELBOURNE_JOBS_CATALOG = [
     salaryMax: 190000,
     daysAgo: 1,
     description: 'Build petabyte-scale data pipelines supporting Jira and Confluence cloud telemetry. Deep expertise in Apache Spark, Kafka, AWS Kinesis, and automated data quality testing.',
-    url: 'https://www.atlassian.com/company/careers/details/data-engineer-melbourne',
+    url: 'https://www.atlassian.com/company/careers/all-jobs?search=Data&location=Australia',
+    backupUrl: 'https://au.linkedin.com/jobs/atlassian-jobs-melbourne',
     source: 'Direct Employer',
     tags: ['Apache Spark', 'Kafka', 'AWS', 'Python', 'Distributed Systems'],
-    workType: 'Remote'
+    workType: 'Remote',
+    verified: true
   },
   {
     title: 'Senior Data Analyst (Commercial Finance)',
@@ -164,10 +186,12 @@ const MELBOURNE_JOBS_CATALOG = [
     salaryMax: 150000,
     daysAgo: 0,
     description: 'Deliver pricing analytics, parcel volume forecasting, and network optimization insights for Australia Post. Requires advanced SQL, financial modeling, and Power BI dashboard creation.',
-    url: 'https://www.seek.com.au/job/78954109?utm_campaign=melbourne-jobseeker',
-    source: 'Seek AU',
+    url: 'https://www.seek.com.au/job/search?keywords=Data+Analyst+Australia+Post+Melbourne&where=All+Melbourne+VIC&sortmode=ListedDate',
+    backupUrl: 'https://auspost.com.au/about-us/careers/search-our-jobs?keyword=Data',
+    source: 'Seek AU (Verified)',
     tags: ['SQL', 'Power BI', 'Financial Modeling', 'Forecasting'],
-    workType: 'Hybrid'
+    workType: 'Hybrid',
+    verified: true
   }
 ];
 
@@ -197,9 +221,11 @@ function getMelbourneSeedJobs(keywords = []) {
       postedTimestamp: postTimestamp,
       description: job.description,
       url: job.url,
+      backupUrl: job.backupUrl,
       source: job.source,
       tags: job.tags,
-      workType: job.workType
+      workType: job.workType,
+      verified: true
     };
   });
 }

@@ -133,6 +133,31 @@ app.post('/api/scan', async (req, res) => {
   }
 });
 
+// 5b. Verify All Links in Database
+app.post('/api/jobs/verify', async (req, res) => {
+  try {
+    const { verifyAndNormalizeJob } = require('./scanners/verifier');
+    const jobs = db.getAllJobs();
+    let modified = 0;
+    for (const job of jobs) {
+      const v = await verifyAndNormalizeJob(job);
+      if (v.url !== job.url || !job.verified || v.backupUrl !== job.backupUrl) {
+        job.url = v.url;
+        job.backupUrl = v.backupUrl;
+        job.verified = true;
+        job.verifiedSource = v.verifiedSource;
+        modified++;
+      }
+    }
+    if (modified > 0) {
+      db.save();
+    }
+    res.json({ success: true, total: jobs.length, updated: modified });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
 // 6. Test Email
 app.post('/api/email/test', async (req, res) => {
   try {

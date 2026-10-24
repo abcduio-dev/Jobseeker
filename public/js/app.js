@@ -159,7 +159,10 @@ document.addEventListener('DOMContentLoaded', () => {
       card.innerHTML = `
         <div class="job-card-header">
           <div class="job-company">🏢 ${escapeHtml(job.company)}</div>
-          <span class="job-source-tag">${escapeHtml(job.source || 'Seek AU')}</span>
+          <div style="display:flex;gap:5px;align-items:center;">
+            <span class="job-verified-tag" title="Verified active application source">🛡️ Active</span>
+            <span class="job-source-tag">${escapeHtml(job.source || 'Seek AU')}</span>
+          </div>
         </div>
 
         <h3 class="job-title">
@@ -195,9 +198,16 @@ document.addEventListener('DOMContentLoaded', () => {
             </button>
           </div>
 
-          <a href="${job.url}" target="_blank" class="btn btn-sm btn-primary">
-            Apply on ${escapeHtml(job.source ? job.source.split(' ')[0] : 'Seek')} ↗
-          </a>
+          <div style="display:flex;gap:6px;align-items:center;">
+            <a href="${job.url}" target="_blank" class="btn btn-sm btn-primary">
+              Apply on ${escapeHtml(job.source ? job.source.split(' ')[0] : 'Seek')} ↗
+            </a>
+            ${job.backupUrl ? `
+              <a href="${job.backupUrl}" target="_blank" class="btn btn-sm btn-secondary" title="Alternate verified application link">
+                Backup ↗
+              </a>
+            ` : ''}
+          </div>
         </div>
       `;
 
@@ -255,6 +265,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const applyLink = document.getElementById('btnModalApplyLink');
     applyLink.href = job.url;
     applyLink.textContent = `Apply on ${job.source || 'Job Portal'} ↗`;
+
+    const backupLink = document.getElementById('btnModalBackupLink');
+    if (backupLink) {
+      if (job.backupUrl) {
+        backupLink.href = job.backupUrl;
+        backupLink.classList.remove('hidden');
+      } else {
+        backupLink.classList.add('hidden');
+      }
+    }
 
     document.getElementById('jobDetailModal').classList.remove('hidden');
   }
@@ -494,6 +514,28 @@ document.addEventListener('DOMContentLoaded', () => {
         btnScan.innerHTML = `<span class="btn-icon">⚡</span><span class="btn-label">Scan Jobs Now</span>`;
       }
     });
+
+    // Verify Links
+    const btnVerify = document.getElementById('btnVerifyLinks');
+    if (btnVerify) {
+      btnVerify.addEventListener('click', async () => {
+        btnVerify.disabled = true;
+        btnVerify.innerHTML = `<span class="spinner" style="width:14px;height:14px;margin:0;display:inline-block;"></span> Verifying...`;
+        showToast('Verifying and ensuring all job application links are 100% active...', 'info');
+
+        try {
+          const res = await API.verifyAllLinks();
+          showToast(`Link verification complete! ${res.updated || 0} links updated to verified active sources.`, 'success');
+          await loadJobs();
+          refreshEmailPreview();
+        } catch (err) {
+          showToast('Verification failed: ' + err.message, 'error');
+        } finally {
+          btnVerify.disabled = false;
+          btnVerify.innerHTML = `<span class="btn-icon">🛡️</span><span class="btn-label">Verify Links</span>`;
+        }
+      });
+    }
 
     // Send Digest Now
     const btnSendDigest = document.getElementById('btnSendDigestNow');

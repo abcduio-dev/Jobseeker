@@ -185,6 +185,12 @@ class Database {
     return { modified, total: this.data.jobs.length };
   }
 
+  setJobs(jobs) {
+    this.data.jobs = Array.isArray(jobs) ? jobs : [];
+    this.save();
+    return this.data.jobs.length;
+  }
+
   // Scan History
   logScan(record) {
     this.data.scanHistory.unshift({

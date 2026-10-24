@@ -133,27 +133,32 @@ app.post('/api/scan', async (req, res) => {
   }
 });
 
-// 5b. Verify All Links in Database
+// 5b. Verify All Links in Database (Exact Apply Page Validation)
 app.post('/api/jobs/verify', async (req, res) => {
   try {
-    const { verifyAndNormalizeJob } = require('./scanners/verifier');
+    const { filterOnlyExactApplyPages } = require('./scanners/verifier');
     const jobs = db.getAllJobs();
-    let modified = 0;
-    for (const job of jobs) {
-      const v = await verifyAndNormalizeJob(job);
-      if (v.url !== job.url || !job.verified || v.backupUrl !== job.backupUrl) {
-        job.url = v.url;
-        job.backupUrl = v.backupUrl;
-        job.verified = true;
-        job.verifiedSource = v.verifiedSource;
-        modified++;
-      }
-    }
-    if (modified > 0) {
-      db.save();
-    }
-    res.json({ success: true, total: jobs.length, updated: modified });
+    console.log(`[Verify API] Starting deep exact apply page validation for ${jobs.length} jobs...`);
+    const { verifiedList, rejectedList } = await filterOnlyExactApplyPages(jobs);
+
+    // Prune rejected non-apply pages and save only verified exact apply pages
+    db.setJobs(verifiedList);
+
+    console.log(`[Verify API] Completed. Verified exact apply pages: ${verifiedList.length}, Rejected: ${rejectedList.length}`);
+    res.json({
+      success: true,
+      total: jobs.length,
+      verifiedCount: verifiedList.length,
+      rejectedCount: rejectedList.length,
+      rejectedSamples: rejectedList.slice(0, 10).map(j => ({
+        title: j.title,
+        company: j.company,
+        reason: j.rejectionReason,
+        url: j.url
+      }))
+    });
   } catch (err) {
+    console.error('[Verify API] Error:', err.message);
     res.status(500).json({ error: err.message });
   }
 });

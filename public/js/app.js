@@ -160,7 +160,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="job-card-header">
           <div class="job-company">🏢 ${escapeHtml(job.company)}</div>
           <div style="display:flex;gap:5px;align-items:center;">
-            <span class="job-verified-tag" title="Verified active application source">🛡️ Active</span>
+            <span class="job-verified-tag" title="Verified exact job apply page - validated directly">✓ Direct Apply Page</span>
             <span class="job-source-tag">${escapeHtml(job.source || 'Seek AU')}</span>
           </div>
         </div>
@@ -199,14 +199,9 @@ document.addEventListener('DOMContentLoaded', () => {
           </div>
 
           <div style="display:flex;gap:6px;align-items:center;">
-            <a href="${job.url}" target="_blank" class="btn btn-sm btn-primary">
-              ${job.url.includes('linkedin.com') ? 'Apply on LinkedIn ↗' : (job.url.includes('seek.com.au') ? 'Apply on Seek AU ↗' : `Apply at ${escapeHtml(job.company.split(' ')[0])} ↗`)}
+            <a href="${job.url}" target="_blank" class="btn btn-sm btn-primary" title="Open exact verified apply page directly">
+              Apply for this Role ↗
             </a>
-            ${job.backupUrl ? `
-              <a href="${job.backupUrl}" target="_blank" class="btn btn-sm btn-secondary" title="Alternate verified application link">
-                ${job.backupUrl.includes('seek.com.au') ? 'Seek AU ↗' : 'LinkedIn ↗'}
-              </a>
-            ` : ''}
           </div>
         </div>
       `;
@@ -521,19 +516,19 @@ document.addEventListener('DOMContentLoaded', () => {
     if (btnVerify) {
       btnVerify.addEventListener('click', async () => {
         btnVerify.disabled = true;
-        btnVerify.innerHTML = `<span class="spinner" style="width:14px;height:14px;margin:0;display:inline-block;"></span> Verifying...`;
-        showToast('Verifying and ensuring all job application links are 100% active...', 'info');
+        btnVerify.innerHTML = `<span class="spinner" style="width:14px;height:14px;margin:0;display:inline-block;"></span> Validating...`;
+        showToast('Validating exact job application pages directly in real time...', 'info');
 
         try {
           const res = await API.verifyAllLinks();
-          showToast(`Link verification complete! ${res.updated || 0} links updated to verified active sources.`, 'success');
+          showToast(`Exact Apply Page Validation Complete! ${res.verifiedCount || 0} direct apply pages verified, ${res.rejectedCount || 0} invalid pages pruned.`, 'success');
           await loadJobs();
           refreshEmailPreview();
         } catch (err) {
-          showToast('Verification failed: ' + err.message, 'error');
+          showToast('Validation failed: ' + err.message, 'error');
         } finally {
           btnVerify.disabled = false;
-          btnVerify.innerHTML = `<span class="btn-icon">🛡️</span><span class="btn-label">Verify Links</span>`;
+          btnVerify.innerHTML = `<span class="btn-icon">🛡️</span><span class="btn-label">Validate Apply Pages</span>`;
         }
       });
     }

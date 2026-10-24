@@ -66,150 +66,6 @@
   },
   "jobs": [
     {
-      "id": "melb_fd30051cec",
-      "title": "Data Analyst - Growth & Marketing",
-      "company": "Canva",
-      "location": "Melbourne VIC / Remote (Australia)",
-      "salary": "$125,000 - $145,000 + Generous Equity Options",
-      "salaryMin": 125000,
-      "salaryMax": 145000,
-      "postDate": "Today",
-      "postedTimestamp": 1792797147482,
-      "description": "Drive conversion, retention, and subscription insights for global user segments. Strong SQL fluency, A/B testing methodology, and dashboarding in Looker or Mode required.",
-      "url": "https://www.canva.com/careers/",
-      "backupUrl": "https://www.seek.com.au/jobs?keywords=Data%20Analyst%20Canva&where=All+Melbourne+VIC&sortmode=ListedDate",
-      "source": "Official Company Careers",
-      "tags": [
-        "SQL",
-        "A/B Testing",
-        "Looker",
-        "Python",
-        "SaaS"
-      ],
-      "workType": "Remote",
-      "verified": true,
-      "verifiedSource": "Official Company Careers",
-      "verifiedAt": "2026-10-24T01:39:44.509Z",
-      "status": "new",
-      "firstSeenAt": "2026-10-24T01:39:44.510Z",
-      "lastSeenAt": "2026-10-24T01:39:44.510Z"
-    },
-    {
-      "id": "melb_256e98bf6f",
-      "title": "Senior Data Analyst - Customer Analytics",
-      "company": "ANZ Banking Group",
-      "location": "Docklands VIC, Australia (Hybrid)",
-      "salary": "$135,000 - $155,000 + 11.5% Super & Bonus",
-      "salaryMin": 135000,
-      "salaryMax": 155000,
-      "postDate": "Today",
-      "postedTimestamp": 1792795727140,
-      "description": "Join the Data & Analytics Chapter at ANZ Collins Street. You will lead predictive customer churn modeling, transaction insights, and executive dashboards using SQL, Python, Snowflake, and Power BI.",
-      "url": "https://www.anz.com.au/about-us/careers/",
-      "backupUrl": "https://www.seek.com.au/jobs?keywords=Senior%20Data%20Analyst%20ANZ&where=All+Melbourne+VIC&sortmode=ListedDate",
-      "source": "Official Company Careers",
-      "tags": [
-        "SQL",
-        "Power BI",
-        "Snowflake",
-        "Python",
-        "Banking"
-      ],
-      "workType": "Hybrid",
-      "verified": true,
-      "verifiedSource": "Official Company Careers",
-      "verifiedAt": "2026-10-24T01:39:44.509Z",
-      "status": "new",
-      "firstSeenAt": "2026-10-24T01:39:44.510Z",
-      "lastSeenAt": "2026-10-24T01:39:44.510Z"
-    },
-    {
-      "id": "melb_ebe252f6e4",
-      "title": "Senior Data Analyst (Commercial Finance)",
-      "company": "Australia Post",
-      "location": "Melbourne CBD (111 Bourke St), VIC",
-      "salary": "$135,000 - $150,000 + Super & Incentives",
-      "salaryMin": 135000,
-      "salaryMax": 150000,
-      "postDate": "Today",
-      "postedTimestamp": 1792792636986,
-      "description": "Deliver pricing analytics, parcel volume forecasting, and network optimization insights for Australia Post. Requires advanced SQL, financial modeling, and Power BI dashboard creation.",
-      "url": "https://jobs.auspost.com.au",
-      "backupUrl": "https://www.seek.com.au/jobs?keywords=Senior%20Data%20Analyst%20Commercial%20Finance%20Australia%20Post&where=All+Melbourne+VIC&sortmode=ListedDate",
-      "source": "Official Company Careers",
-      "tags": [
-        "SQL",
-        "Power BI",
-        "Financial Modeling",
-        "Forecasting"
-      ],
-      "workType": "Hybrid",
-      "verified": true,
-      "verifiedSource": "Official Company Careers",
-      "verifiedAt": "2026-10-24T01:39:44.509Z",
-      "status": "new",
-      "firstSeenAt": "2026-10-24T01:39:44.510Z",
-      "lastSeenAt": "2026-10-24T01:39:44.510Z"
-    },
-    {
-      "id": "melb_0df4c81460",
-      "title": "Senior Business Intelligence Analyst",
-      "company": "Coles Group",
-      "location": "Hawthorn East VIC, Australia (Hybrid)",
-      "salary": "$140,000 - $160,000 + Super + Colleague Discount",
-      "salaryMin": 140000,
-      "salaryMax": 160000,
-      "postDate": "Today",
-      "postedTimestamp": 1792788277160,
-      "description": "Lead analytics initiatives across supply chain and Flybuys retail loyalty data. You will architect dimensional models in Azure Synapse, build Power BI apps, and mentor junior analysts.",
-      "url": "https://www.colescareers.com.au/",
-      "backupUrl": "https://www.seek.com.au/jobs?keywords=Senior%20Business%20Intelligence%20Analyst%20Coles&where=All+Melbourne+VIC&sortmode=ListedDate",
-      "source": "Official Company Careers",
-      "tags": [
-        "Power BI",
-        "Azure Synapse",
-        "SQL",
-        "Retail Analytics",
-        "DAX"
-      ],
-      "workType": "Hybrid",
-      "verified": true,
-      "verifiedSource": "Official Company Careers",
-      "verifiedAt": "2026-10-24T01:39:44.509Z",
-      "status": "new",
-      "firstSeenAt": "2026-10-24T01:39:44.510Z",
-      "lastSeenAt": "2026-10-24T01:39:44.510Z"
-    },
-    {
-      "id": "melb_9c37b586be",
-      "title": "Data Engineer - Modern Data Stack",
-      "company": "SEEK Limited",
-      "location": "Cremorne VIC, Australia (Hybrid)",
-      "salary": "$145,000 - $170,000 + Super + SEEK Share Plan",
-      "salaryMin": 145000,
-      "salaryMax": 170000,
-      "postDate": "Yesterday",
-      "postedTimestamp": 1792714960878,
-      "description": "Join the Core Marketplace Data Platform team at SEEK headquarters in Cremorne. Design, build, and maintain production data pipelines using dbt, Snowflake, AWS, Python, and Kafka.",
-      "url": "https://www.seek.com.au/seek-jobs/in-All-Melbourne-VIC?sortmode=ListedDate",
-      "backupUrl": "https://www.seek.com.au/jobs?keywords=Data%20Engineer%20SEEK&where=All+Melbourne+VIC&sortmode=ListedDate",
-      "source": "Seek AU (Verified)",
-      "tags": [
-        "Snowflake",
-        "dbt",
-        "Python",
-        "AWS",
-        "Kafka"
-      ],
-      "workType": "Hybrid",
-      "verified": true,
-      "verifiedSource": "Official Company Careers",
-      "verifiedAt": "2026-10-24T01:39:44.509Z",
-      "status": "new",
-      "firstSeenAt": "2026-10-24T01:39:44.510Z",
-      "lastSeenAt": "2026-10-24T01:39:44.510Z"
-    },
-    {
       "id": "li_4480606799",
       "title": "AI Analytics Engineer",
       "company": "Fusion Markets",
@@ -221,106 +77,18 @@
       "postedTimestamp": 1792713600000,
       "description": "Join Fusion Markets in South Yarra, Victoria, Australia as a AI Analytics Engineer. Focus on delivering impactful data analytics, business intelligence dashboards, and data-driven insights.",
       "url": "https://au.linkedin.com/jobs/view/ai-analytics-engineer-at-fusion-markets-4480606799?position=3&pageNum=0&refId=ZdNf1UmYlYAJBOj59BV90w%3D%3D&trackingId=Js9l%2FGQ4Cfy%2Bz5BbfBtZgQ%3D%3D",
-      "source": "LinkedIn AU",
+      "source": "LinkedIn AU (Direct Apply Page)",
       "tags": [
         "Melbourne",
         "R"
       ],
       "workType": "Hybrid",
-      "backupUrl": "https://www.seek.com.au/jobs?keywords=AI%20Analytics%20Engineer%20Fusion%20Markets&where=All+Melbourne+VIC&sortmode=ListedDate",
       "verified": true,
-      "verifiedSource": "LinkedIn AU (Direct Post)",
-      "verifiedAt": "2026-10-24T01:39:44.509Z",
-      "status": "new",
-      "firstSeenAt": "2026-10-24T01:39:44.510Z",
-      "lastSeenAt": "2026-10-24T01:39:44.510Z"
-    },
-    {
-      "id": "melb_98f9f72cd8",
-      "title": "Business Intelligence Analyst",
-      "company": "REA Group",
-      "location": "Richmond VIC, Australia (Hybrid 2 days/wk)",
-      "salary": "$120,000 - $140,000 + 11.5% Super + Equity",
-      "salaryMin": 120000,
-      "salaryMax": 140000,
-      "postDate": "Yesterday",
-      "postedTimestamp": 1792706275143,
-      "description": "Work with realestate.com.au product and commercial teams to build automated Tableau and Power BI reporting suites. Strong BigQuery, SQL, and data storytelling skills required.",
-      "url": "https://careers.rea-group.com/",
-      "backupUrl": "https://www.seek.com.au/jobs?keywords=Business%20Intelligence%20Analyst%20REA%20Group&where=All+Melbourne+VIC&sortmode=ListedDate",
-      "source": "Official Company Careers",
-      "tags": [
-        "Tableau",
-        "BigQuery",
-        "SQL",
-        "PropTech",
-        "Richmond"
-      ],
-      "workType": "Hybrid",
-      "verified": true,
-      "verifiedSource": "Official Company Careers",
-      "verifiedAt": "2026-10-24T01:39:44.509Z",
-      "status": "new",
-      "firstSeenAt": "2026-10-24T01:39:44.510Z",
-      "lastSeenAt": "2026-10-24T01:39:44.510Z"
-    },
-    {
-      "id": "melb_b5c9ca4d5a",
-      "title": "Data Analyst - Operations & Transport",
-      "company": "Department of Transport and Planning VIC",
-      "location": "Melbourne CBD (Spring St), VIC",
-      "salary": "$115,000 - $132,000 + 11.5% Super (VPS 5 equivalent)",
-      "salaryMin": 115000,
-      "salaryMax": 132000,
-      "postDate": "Yesterday",
-      "postedTimestamp": 1792705802364,
-      "description": "Analyze Melbourne public transport patronage, train punctuality, and smart ticketing (myki) data to optimize Victoria’s transit network. Strong GIS, SQL, and R/Python preferred.",
-      "url": "https://careers.vic.gov.au/",
-      "backupUrl": "https://www.seek.com.au/jobs?keywords=Data%20Analyst%20Department%20of%20Transport%20and%20Planning%20VIC&where=All+Melbourne+VIC&sortmode=ListedDate",
-      "source": "Vic Government Official",
-      "tags": [
-        "SQL",
-        "Python",
-        "GIS",
-        "Public Sector",
-        "Tableau"
-      ],
-      "workType": "Hybrid",
-      "verified": true,
-      "verifiedSource": "Official Company Careers",
-      "verifiedAt": "2026-10-24T01:39:44.509Z",
-      "status": "new",
-      "firstSeenAt": "2026-10-24T01:39:44.510Z",
-      "lastSeenAt": "2026-10-24T01:39:44.510Z"
-    },
-    {
-      "id": "melb_050cd37e12",
-      "title": "Data Engineer - Streaming Analytics",
-      "company": "Atlassian",
-      "location": "Melbourne VIC / Remote Australia",
-      "salary": "$160,000 - $190,000 + Equity + Super",
-      "salaryMin": 160000,
-      "salaryMax": 190000,
-      "postDate": "Yesterday",
-      "postedTimestamp": 1792704578103,
-      "description": "Build petabyte-scale data pipelines supporting Jira and Confluence cloud telemetry. Deep expertise in Apache Spark, Kafka, AWS Kinesis, and automated data quality testing.",
-      "url": "https://www.atlassian.com/company/careers",
-      "backupUrl": "https://www.seek.com.au/jobs?keywords=Data%20Engineer%20Atlassian&where=All+Melbourne+VIC&sortmode=ListedDate",
-      "source": "Official Company Careers",
-      "tags": [
-        "Apache Spark",
-        "Kafka",
-        "AWS",
-        "Python",
-        "Distributed Systems"
-      ],
-      "workType": "Remote",
-      "verified": true,
-      "verifiedSource": "Official Company Careers",
-      "verifiedAt": "2026-10-24T01:39:44.509Z",
-      "status": "new",
-      "firstSeenAt": "2026-10-24T01:39:44.510Z",
-      "lastSeenAt": "2026-10-24T01:39:44.510Z"
+      "exactApplyPage": true,
+      "exactPageTitle": "AI Analytics Engineer",
+      "applyButtonConfirmed": true,
+      "verifiedSource": "LinkedIn AU (Direct Apply Page)",
+      "verifiedAt": "2026-10-24T02:03:49.117Z"
     },
     {
       "id": "li_4482401830",
@@ -334,19 +102,18 @@
       "postedTimestamp": 1792627200000,
       "description": "Join APA Group in Melbourne, Victoria, Australia as a Customer Insights Analyst. Focus on delivering impactful data analytics, business intelligence dashboards, and data-driven insights.",
       "url": "https://au.linkedin.com/jobs/view/customer-insights-analyst-at-apa-group-4482401830?position=7&pageNum=0&refId=s4HLsU5rIF1zxDv%2FQmp0kw%3D%3D&trackingId=gzp6B7qLMq4N7VVGMQ2KHA%3D%3D",
-      "source": "LinkedIn AU",
+      "source": "LinkedIn AU (Direct Apply Page)",
       "tags": [
         "Melbourne",
         "R"
       ],
       "workType": "Hybrid",
-      "backupUrl": "https://www.seek.com.au/jobs?keywords=Customer%20Insights%20Analyst%20APA%20Group&where=All+Melbourne+VIC&sortmode=ListedDate",
       "verified": true,
-      "verifiedSource": "LinkedIn AU (Direct Post)",
-      "verifiedAt": "2026-10-24T01:39:44.509Z",
-      "status": "new",
-      "firstSeenAt": "2026-10-24T01:39:44.510Z",
-      "lastSeenAt": "2026-10-24T01:39:44.510Z"
+      "exactApplyPage": true,
+      "exactPageTitle": "Customer Insights Analyst",
+      "applyButtonConfirmed": true,
+      "verifiedSource": "LinkedIn AU (Direct Apply Page)",
+      "verifiedAt": "2026-10-24T02:03:50.281Z"
     },
     {
       "id": "li_4445458909",
@@ -360,104 +127,19 @@
       "postedTimestamp": 1792627200000,
       "description": "Join Mantel in Melbourne, Victoria, Australia as a Senior Data&AI Engineer - Databricks. Focus on delivering impactful data analytics, business intelligence dashboards, and data-driven insights.",
       "url": "https://au.linkedin.com/jobs/view/senior-data-ai-engineer-databricks-at-mantel-4445458909?position=3&pageNum=0&refId=4qLJ6m8hyezjHV%2F1GOtivg%3D%3D&trackingId=fMWAquaHaNHJZnGwvKmTSA%3D%3D",
-      "source": "LinkedIn AU",
+      "source": "LinkedIn AU (Direct Apply Page)",
       "tags": [
         "Melbourne",
         "R",
         "Databricks"
       ],
       "workType": "Hybrid",
-      "backupUrl": "https://www.seek.com.au/jobs?keywords=Senior%20Data%26AI%20Engineer%20Mantel&where=All+Melbourne+VIC&sortmode=ListedDate",
       "verified": true,
-      "verifiedSource": "LinkedIn AU (Direct Post)",
-      "verifiedAt": "2026-10-24T01:39:44.509Z",
-      "status": "new",
-      "firstSeenAt": "2026-10-24T01:39:44.510Z",
-      "lastSeenAt": "2026-10-24T01:39:44.510Z"
-    },
-    {
-      "id": "li_4472669936",
-      "title": "Senior Data Engineer (Data Business Partner)",
-      "company": "REA Group",
-      "location": "Richmond, Victoria, Australia",
-      "salary": "$135,000 - $165,000 + Super (Est. Senior Range)",
-      "salaryMin": 135000,
-      "salaryMax": 165000,
-      "postDate": "2026-10-22",
-      "postedTimestamp": 1792627200000,
-      "description": "Join REA Group in Richmond, Victoria, Australia as a Senior Data Engineer (Data Business Partner). Focus on delivering impactful data analytics, business intelligence dashboards, and data-driven insights.",
-      "url": "https://careers.rea-group.com/",
-      "source": "LinkedIn AU",
-      "tags": [
-        "Melbourne",
-        "R"
-      ],
-      "workType": "Hybrid",
-      "backupUrl": "https://www.seek.com.au/jobs?keywords=Senior%20Data%20Engineer%20Data%20Business%20Partner%20REA%20Group&where=All+Melbourne+VIC&sortmode=ListedDate",
-      "verified": true,
-      "verifiedSource": "Official Company Careers",
-      "verifiedAt": "2026-10-24T01:39:44.509Z",
-      "status": "new",
-      "firstSeenAt": "2026-10-24T01:39:44.510Z",
-      "lastSeenAt": "2026-10-24T01:39:44.510Z"
-    },
-    {
-      "id": "melb_ddb1cc5480",
-      "title": "Senior Data Engineer (Cloud Platforms)",
-      "company": "National Australia Bank (NAB)",
-      "location": "Melbourne CBD, VIC (Hybrid)",
-      "salary": "$155,000 - $180,000 + Super & Annual Incentive",
-      "salaryMin": 155000,
-      "salaryMax": 180000,
-      "postDate": "2 days ago (2026-10-21)",
-      "postedTimestamp": 1792617796797,
-      "description": "Deliver enterprise data lakehouse infrastructure on AWS with Databricks and PySpark. Drive data quality, CI/CD dataops, and secure regulatory reporting pipelines.",
-      "url": "https://www.nab.com.au/about-us/careers",
-      "backupUrl": "https://www.seek.com.au/jobs?keywords=Senior%20Data%20Engineer%20Cloud%20Platforms%20NAB&where=All+Melbourne+VIC&sortmode=ListedDate",
-      "source": "Official Company Careers",
-      "tags": [
-        "AWS",
-        "Databricks",
-        "PySpark",
-        "Python",
-        "Enterprise"
-      ],
-      "workType": "Hybrid",
-      "verified": true,
-      "verifiedSource": "Official Company Careers",
-      "verifiedAt": "2026-10-24T01:39:44.510Z",
-      "status": "new",
-      "firstSeenAt": "2026-10-24T01:39:44.510Z",
-      "lastSeenAt": "2026-10-24T01:39:44.510Z"
-    },
-    {
-      "id": "melb_70a6041394",
-      "title": "Analytics Engineer (dbt & BigQuery)",
-      "company": "Telstra",
-      "location": "Melbourne CBD, VIC (Hybrid 1-2 days/mo)",
-      "salary": "$135,000 - $155,000 + 11.5% Super + Telstra Perks",
-      "salaryMin": 135000,
-      "salaryMax": 155000,
-      "postDate": "2 days ago (2026-10-21)",
-      "postedTimestamp": 1792617742660,
-      "description": "Bridge the gap between data engineering and business analytics. Transform raw telecom event streams into clean, tested dbt models and semantic metrics layers in Google BigQuery.",
-      "url": "https://careers.telstra.com/",
-      "backupUrl": "https://www.seek.com.au/jobs?keywords=Analytics%20Engineer%20dbt%20%26%20BigQuery%20Telstra&where=All+Melbourne+VIC&sortmode=ListedDate",
-      "source": "Official Company Careers",
-      "tags": [
-        "dbt",
-        "BigQuery",
-        "GCP",
-        "SQL",
-        "Data Modeling"
-      ],
-      "workType": "Hybrid",
-      "verified": true,
-      "verifiedSource": "Official Company Careers",
-      "verifiedAt": "2026-10-24T01:39:44.510Z",
-      "status": "new",
-      "firstSeenAt": "2026-10-24T01:39:44.510Z",
-      "lastSeenAt": "2026-10-24T01:39:44.510Z"
+      "exactApplyPage": true,
+      "exactPageTitle": "Senior Data&AI Engineer - Databricks",
+      "applyButtonConfirmed": true,
+      "verifiedSource": "LinkedIn AU (Direct Apply Page)",
+      "verifiedAt": "2026-10-24T02:03:50.880Z"
     },
     {
       "id": "li_4480750246",
@@ -471,19 +153,18 @@
       "postedTimestamp": 1792540800000,
       "description": "Join Bayside Health in Melbourne, Victoria, Australia as a Senior Analyst. Focus on delivering impactful data analytics, business intelligence dashboards, and data-driven insights.",
       "url": "https://au.linkedin.com/jobs/view/senior-analyst-at-bayside-health-4480750246?position=7&pageNum=0&refId=SKx8ZHWwBrSj1elLAxBaaw%3D%3D&trackingId=LJIVML0EOZkGGPsf7nlvVg%3D%3D",
-      "source": "LinkedIn AU",
+      "source": "LinkedIn AU (Direct Apply Page)",
       "tags": [
         "Melbourne",
         "R"
       ],
       "workType": "Hybrid",
-      "backupUrl": "https://www.seek.com.au/jobs?keywords=Senior%20Analyst%20Bayside%20Health&where=All+Melbourne+VIC&sortmode=ListedDate",
       "verified": true,
-      "verifiedSource": "LinkedIn AU (Direct Post)",
-      "verifiedAt": "2026-10-24T01:39:44.510Z",
-      "status": "new",
-      "firstSeenAt": "2026-10-24T01:39:44.510Z",
-      "lastSeenAt": "2026-10-24T01:39:44.510Z"
+      "exactApplyPage": true,
+      "exactPageTitle": "Senior Analyst",
+      "applyButtonConfirmed": true,
+      "verifiedSource": "LinkedIn AU (Direct Apply Page)",
+      "verifiedAt": "2026-10-24T02:03:51.978Z"
     },
     {
       "id": "li_4480794661",
@@ -497,19 +178,18 @@
       "postedTimestamp": 1792540800000,
       "description": "Join Flexiq | Flexible Thinking in Melbourne, Victoria, Australia as a Senior Analyst. Focus on delivering impactful data analytics, business intelligence dashboards, and data-driven insights.",
       "url": "https://au.linkedin.com/jobs/view/senior-analyst-at-flexiq-flexible-thinking-4480794661?position=8&pageNum=0&refId=JNyeQ26YTqLLU%2B4UGoJU1Q%3D%3D&trackingId=3ggPCu8mDAeKV8H7TwUYcg%3D%3D",
-      "source": "LinkedIn AU",
+      "source": "LinkedIn AU (Direct Apply Page)",
       "tags": [
         "Melbourne",
         "R"
       ],
       "workType": "Hybrid",
-      "backupUrl": "https://www.seek.com.au/jobs?keywords=Senior%20Analyst%20Flexiq%20%7C%20Flexible%20Thinking&where=All+Melbourne+VIC&sortmode=ListedDate",
       "verified": true,
-      "verifiedSource": "LinkedIn AU (Direct Post)",
-      "verifiedAt": "2026-10-24T01:39:44.510Z",
-      "status": "new",
-      "firstSeenAt": "2026-10-24T01:39:44.510Z",
-      "lastSeenAt": "2026-10-24T01:39:44.510Z"
+      "exactApplyPage": true,
+      "exactPageTitle": "Senior Analyst",
+      "applyButtonConfirmed": true,
+      "verifiedSource": "LinkedIn AU (Direct Apply Page)",
+      "verifiedAt": "2026-10-24T02:03:53.404Z"
     },
     {
       "id": "li_4480926957",
@@ -523,19 +203,18 @@
       "postedTimestamp": 1792368000000,
       "description": "Join Sportsbet in Melbourne, Victoria, Australia as a Insights Analyst. Focus on delivering impactful data analytics, business intelligence dashboards, and data-driven insights.",
       "url": "https://au.linkedin.com/jobs/view/insights-analyst-at-sportsbet-4480926957?position=2&pageNum=0&refId=s4HLsU5rIF1zxDv%2FQmp0kw%3D%3D&trackingId=MypsRGeMUqgFbInGbmJZ1g%3D%3D",
-      "source": "LinkedIn AU",
+      "source": "LinkedIn AU (Direct Apply Page)",
       "tags": [
         "Melbourne",
         "R"
       ],
       "workType": "Hybrid",
-      "backupUrl": "https://www.seek.com.au/jobs?keywords=Insights%20Analyst%20Sportsbet&where=All+Melbourne+VIC&sortmode=ListedDate",
       "verified": true,
-      "verifiedSource": "LinkedIn AU (Direct Post)",
-      "verifiedAt": "2026-10-24T01:39:44.510Z",
-      "status": "new",
-      "firstSeenAt": "2026-10-24T01:39:44.510Z",
-      "lastSeenAt": "2026-10-24T01:39:44.510Z"
+      "exactApplyPage": true,
+      "exactPageTitle": "Insights Analyst",
+      "applyButtonConfirmed": true,
+      "verifiedSource": "LinkedIn AU (Direct Apply Page)",
+      "verifiedAt": "2026-10-24T02:03:54.153Z"
     },
     {
       "id": "li_4480267676",
@@ -549,19 +228,18 @@
       "postedTimestamp": 1792368000000,
       "description": "Join Vocus in Melbourne, Victoria, Australia as a Sales Reporting & Insights Analyst. Focus on delivering impactful data analytics, business intelligence dashboards, and data-driven insights.",
       "url": "https://au.linkedin.com/jobs/view/sales-reporting-insights-analyst-at-vocus-4480267676?position=6&pageNum=0&refId=s4HLsU5rIF1zxDv%2FQmp0kw%3D%3D&trackingId=zorNYH%2FIyENaLVhY62Cqrg%3D%3D",
-      "source": "LinkedIn AU",
+      "source": "LinkedIn AU (Direct Apply Page)",
       "tags": [
         "Melbourne",
         "R"
       ],
       "workType": "Hybrid",
-      "backupUrl": "https://www.seek.com.au/jobs?keywords=Sales%20Reporting%20%26%20Insights%20Analyst%20Vocus&where=All+Melbourne+VIC&sortmode=ListedDate",
       "verified": true,
-      "verifiedSource": "LinkedIn AU (Direct Post)",
-      "verifiedAt": "2026-10-24T01:39:44.510Z",
-      "status": "new",
-      "firstSeenAt": "2026-10-24T01:39:44.510Z",
-      "lastSeenAt": "2026-10-24T01:39:44.510Z"
+      "exactApplyPage": true,
+      "exactPageTitle": "Sales Reporting & Insights Analyst",
+      "applyButtonConfirmed": true,
+      "verifiedSource": "LinkedIn AU (Direct Apply Page)",
+      "verifiedAt": "2026-10-24T02:03:55.568Z"
     },
     {
       "id": "li_4479946480",
@@ -575,19 +253,18 @@
       "postedTimestamp": 1792281600000,
       "description": "Join BGL Corporate Solutions in Canterbury, Victoria, Australia as a Senior Data Analyst. Focus on delivering impactful data analytics, business intelligence dashboards, and data-driven insights.",
       "url": "https://au.linkedin.com/jobs/view/senior-data-analyst-at-bgl-corporate-solutions-4479946480?position=6&pageNum=0&refId=JNyeQ26YTqLLU%2B4UGoJU1Q%3D%3D&trackingId=hgLxIrhGg3ahGTLrUO%2Bi7Q%3D%3D",
-      "source": "LinkedIn AU",
+      "source": "LinkedIn AU (Direct Apply Page)",
       "tags": [
         "Melbourne",
         "R"
       ],
       "workType": "Hybrid",
-      "backupUrl": "https://www.seek.com.au/jobs?keywords=Senior%20Data%20Analyst%20BGL%20Corporate%20Solutions&where=All+Melbourne+VIC&sortmode=ListedDate",
       "verified": true,
-      "verifiedSource": "LinkedIn AU (Direct Post)",
-      "verifiedAt": "2026-10-24T01:39:44.510Z",
-      "status": "new",
-      "firstSeenAt": "2026-10-24T01:39:44.510Z",
-      "lastSeenAt": "2026-10-24T01:39:44.510Z"
+      "exactApplyPage": true,
+      "exactPageTitle": "Senior Data Analyst",
+      "applyButtonConfirmed": true,
+      "verifiedSource": "LinkedIn AU (Direct Apply Page)",
+      "verifiedAt": "2026-10-24T02:03:56.730Z"
     },
     {
       "id": "li_4443120010",
@@ -601,19 +278,18 @@
       "postedTimestamp": 1792108800000,
       "description": "Join EY in Melbourne, Victoria, Australia as a Senior Data Analyst. Focus on delivering impactful data analytics, business intelligence dashboards, and data-driven insights.",
       "url": "https://au.linkedin.com/jobs/view/senior-data-analyst-at-ey-4443120010?position=5&pageNum=0&refId=SKx8ZHWwBrSj1elLAxBaaw%3D%3D&trackingId=vzR7%2BRH%2FxrS4wCjlhh4ZUQ%3D%3D",
-      "source": "LinkedIn AU",
+      "source": "LinkedIn AU (Direct Apply Page)",
       "tags": [
         "Melbourne",
         "R"
       ],
       "workType": "Hybrid",
-      "backupUrl": "https://www.seek.com.au/jobs?keywords=Senior%20Data%20Analyst%20EY&where=All+Melbourne+VIC&sortmode=ListedDate",
       "verified": true,
-      "verifiedSource": "LinkedIn AU (Direct Post)",
-      "verifiedAt": "2026-10-24T01:39:44.510Z",
-      "status": "new",
-      "firstSeenAt": "2026-10-24T01:39:44.510Z",
-      "lastSeenAt": "2026-10-24T01:39:44.510Z"
+      "exactApplyPage": true,
+      "exactPageTitle": "Senior Data Analyst",
+      "applyButtonConfirmed": true,
+      "verifiedSource": "LinkedIn AU (Direct Apply Page)",
+      "verifiedAt": "2026-10-24T02:03:58.168Z"
     },
     {
       "id": "li_4479319447",
@@ -627,19 +303,18 @@
       "postedTimestamp": 1792108800000,
       "description": "Join VIDA Health in Melbourne, Victoria, Australia as a Senior Advisor, Digital Build - Data Analytics. Focus on delivering impactful data analytics, business intelligence dashboards, and data-driven insights.",
       "url": "https://au.linkedin.com/jobs/view/senior-advisor-digital-build-data-analytics-at-vida-health-4479319447?position=3&pageNum=0&refId=4uA0yRaT6d%2FBKobK12l2QQ%3D%3D&trackingId=%2F65c44M16Ig%2FLuoz62tNyg%3D%3D",
-      "source": "LinkedIn AU",
+      "source": "LinkedIn AU (Direct Apply Page)",
       "tags": [
         "Melbourne",
         "R"
       ],
       "workType": "Hybrid",
-      "backupUrl": "https://www.seek.com.au/jobs?keywords=Senior%20Advisor%2C%20Digital%20Build%20VIDA%20Health&where=All+Melbourne+VIC&sortmode=ListedDate",
       "verified": true,
-      "verifiedSource": "LinkedIn AU (Direct Post)",
-      "verifiedAt": "2026-10-24T01:39:44.510Z",
-      "status": "new",
-      "firstSeenAt": "2026-10-24T01:39:44.510Z",
-      "lastSeenAt": "2026-10-24T01:39:44.510Z"
+      "exactApplyPage": true,
+      "exactPageTitle": "Senior Advisor, Digital Build - Data Analytics",
+      "applyButtonConfirmed": true,
+      "verifiedSource": "LinkedIn AU (Direct Apply Page)",
+      "verifiedAt": "2026-10-24T02:03:59.268Z"
     },
     {
       "id": "li_4477346762",
@@ -653,19 +328,18 @@
       "postedTimestamp": 1792108800000,
       "description": "Join DIXON APPOINTMENTS | Recruitment Agency in Melbourne, Victoria, Australia as a Senior Data Engineer. Focus on delivering impactful data analytics, business intelligence dashboards, and data-driven insights.",
       "url": "https://au.linkedin.com/jobs/view/senior-data-engineer-at-dixon-appointments-recruitment-agency-4477346762?position=4&pageNum=0&refId=4qLJ6m8hyezjHV%2F1GOtivg%3D%3D&trackingId=bNhCq7o4%2Fx53g5mz72HZtQ%3D%3D",
-      "source": "LinkedIn AU",
+      "source": "LinkedIn AU (Direct Apply Page)",
       "tags": [
         "Melbourne",
         "R"
       ],
       "workType": "Hybrid",
-      "backupUrl": "https://www.seek.com.au/jobs?keywords=Senior%20Data%20Engineer%20DIXON%20APPOINTMENTS%20%7C%20Recruitment%20Agency&where=All+Melbourne+VIC&sortmode=ListedDate",
       "verified": true,
-      "verifiedSource": "LinkedIn AU (Direct Post)",
-      "verifiedAt": "2026-10-24T01:39:44.510Z",
-      "status": "new",
-      "firstSeenAt": "2026-10-24T01:39:44.510Z",
-      "lastSeenAt": "2026-10-24T01:39:44.510Z"
+      "exactApplyPage": true,
+      "exactPageTitle": "Senior Data Engineer",
+      "applyButtonConfirmed": true,
+      "verifiedSource": "LinkedIn AU (Direct Apply Page)",
+      "verifiedAt": "2026-10-24T02:03:59.885Z"
     },
     {
       "id": "li_4461946533",
@@ -679,19 +353,18 @@
       "postedTimestamp": 1792108800000,
       "description": "Join Kraken in Melbourne, Victoria, Australia as a Senior Analytics Engineer. Focus on delivering impactful data analytics, business intelligence dashboards, and data-driven insights.",
       "url": "https://au.linkedin.com/jobs/view/senior-analytics-engineer-at-kraken-4461946533?position=6&pageNum=0&refId=4qLJ6m8hyezjHV%2F1GOtivg%3D%3D&trackingId=tWg%2BwtSldUvo1h4PKTrGXg%3D%3D",
-      "source": "LinkedIn AU",
+      "source": "LinkedIn AU (Direct Apply Page)",
       "tags": [
         "Melbourne",
         "R"
       ],
       "workType": "Hybrid",
-      "backupUrl": "https://www.seek.com.au/jobs?keywords=Senior%20Analytics%20Engineer%20Kraken&where=All+Melbourne+VIC&sortmode=ListedDate",
       "verified": true,
-      "verifiedSource": "LinkedIn AU (Direct Post)",
-      "verifiedAt": "2026-10-24T01:39:44.510Z",
-      "status": "new",
-      "firstSeenAt": "2026-10-24T01:39:44.510Z",
-      "lastSeenAt": "2026-10-24T01:39:44.510Z"
+      "exactApplyPage": true,
+      "exactPageTitle": "Senior Analytics Engineer",
+      "applyButtonConfirmed": true,
+      "verifiedSource": "LinkedIn AU (Direct Apply Page)",
+      "verifiedAt": "2026-10-24T02:04:01.024Z"
     },
     {
       "id": "li_4479236535",
@@ -705,19 +378,18 @@
       "postedTimestamp": 1792022400000,
       "description": "Join Department of Justice and Community Safety, Victoria in Melbourne, Victoria, Australia as a Analyst. Focus on delivering impactful data analytics, business intelligence dashboards, and data-driven insights.",
       "url": "https://au.linkedin.com/jobs/view/analyst-at-department-of-justice-and-community-safety-victoria-4479236535?position=8&pageNum=0&refId=SKx8ZHWwBrSj1elLAxBaaw%3D%3D&trackingId=UdrnEbMiXOjHo8AGhszjFA%3D%3D",
-      "source": "LinkedIn AU",
+      "source": "LinkedIn AU (Direct Apply Page)",
       "tags": [
         "Melbourne",
         "R"
       ],
       "workType": "Hybrid",
-      "backupUrl": "https://www.seek.com.au/jobs?keywords=Analyst%20Department%20of%20Justice%20and%20Community%20Safety%2C%20Victoria&where=All+Melbourne+VIC&sortmode=ListedDate",
       "verified": true,
-      "verifiedSource": "LinkedIn AU (Direct Post)",
-      "verifiedAt": "2026-10-24T01:39:44.510Z",
-      "status": "new",
-      "firstSeenAt": "2026-10-24T01:39:44.510Z",
-      "lastSeenAt": "2026-10-24T01:39:44.510Z"
+      "exactApplyPage": true,
+      "exactPageTitle": "Analyst",
+      "applyButtonConfirmed": true,
+      "verifiedSource": "LinkedIn AU (Direct Apply Page)",
+      "verifiedAt": "2026-10-24T02:04:02.171Z"
     },
     {
       "id": "li_4479753430",
@@ -731,19 +403,18 @@
       "postedTimestamp": 1792022400000,
       "description": "Join Heidi in Melbourne, Victoria, Australia as a Senior Analytics Engineer. Focus on delivering impactful data analytics, business intelligence dashboards, and data-driven insights.",
       "url": "https://au.linkedin.com/jobs/view/senior-analytics-engineer-at-heidi-4479753430?position=4&pageNum=0&refId=ZdNf1UmYlYAJBOj59BV90w%3D%3D&trackingId=K7gnyHE28IVcAgl4KEsEOA%3D%3D",
-      "source": "LinkedIn AU",
+      "source": "LinkedIn AU (Direct Apply Page)",
       "tags": [
         "Melbourne",
         "R"
       ],
       "workType": "Hybrid",
-      "backupUrl": "https://www.seek.com.au/jobs?keywords=Senior%20Analytics%20Engineer%20Heidi&where=All+Melbourne+VIC&sortmode=ListedDate",
       "verified": true,
-      "verifiedSource": "LinkedIn AU (Direct Post)",
-      "verifiedAt": "2026-10-24T01:39:44.510Z",
-      "status": "new",
-      "firstSeenAt": "2026-10-24T01:39:44.510Z",
-      "lastSeenAt": "2026-10-24T01:39:44.510Z"
+      "exactApplyPage": true,
+      "exactPageTitle": "Senior Analytics Engineer",
+      "applyButtonConfirmed": true,
+      "verifiedSource": "LinkedIn AU (Direct Apply Page)",
+      "verifiedAt": "2026-10-24T02:04:03.436Z"
     },
     {
       "id": "li_1",
@@ -757,19 +428,18 @@
       "postedTimestamp": 1791936000000,
       "description": "Join Go1 in Melbourne, Victoria, Australia as a Senior Data Analyst. Focus on delivering impactful data analytics, business intelligence dashboards, and data-driven insights.",
       "url": "https://au.linkedin.com/jobs/view/senior-data-engineer-at-dx1-4474240559?position=1&pageNum=0&refId=4qLJ6m8hyezjHV%2F1GOtivg%3D%3D&trackingId=lOzuywkGb3bqTpXFtPNBVw%3D%3D",
-      "source": "LinkedIn AU",
+      "source": "LinkedIn AU (Direct Apply Page)",
       "tags": [
         "Melbourne",
         "R"
       ],
       "workType": "Hybrid",
-      "backupUrl": "https://www.seek.com.au/jobs?keywords=Senior%20Data%20Engineer%20DX1&where=All+Melbourne+VIC&sortmode=ListedDate",
       "verified": true,
-      "verifiedSource": "LinkedIn AU (Direct Post)",
-      "verifiedAt": "2026-10-24T01:39:44.510Z",
-      "status": "new",
-      "firstSeenAt": "2026-10-24T01:39:44.510Z",
-      "lastSeenAt": "2026-10-24T01:39:44.510Z"
+      "exactApplyPage": true,
+      "exactPageTitle": "Senior Data Engineer",
+      "applyButtonConfirmed": true,
+      "verifiedSource": "LinkedIn AU (Direct Apply Page)",
+      "verifiedAt": "2026-10-24T02:04:04.513Z"
     },
     {
       "id": "li_4476092636",
@@ -783,18 +453,17 @@
       "postedTimestamp": 1791849600000,
       "description": "Join AGL in Docklands, Victoria, Australia as a Data Analyst. Focus on delivering impactful data analytics, business intelligence dashboards, and data-driven insights.",
       "url": "https://au.linkedin.com/jobs/view/data-analyst-at-agl-4476092636?position=3&pageNum=0&refId=SKx8ZHWwBrSj1elLAxBaaw%3D%3D&trackingId=M53djJzpsbNSIC9JY4OL9Q%3D%3D",
-      "source": "LinkedIn AU",
+      "source": "LinkedIn AU (Direct Apply Page)",
       "tags": [
         "Melbourne"
       ],
       "workType": "Hybrid",
-      "backupUrl": "https://www.seek.com.au/jobs?keywords=Data%20Analyst%20AGL&where=All+Melbourne+VIC&sortmode=ListedDate",
       "verified": true,
-      "verifiedSource": "LinkedIn AU (Direct Post)",
-      "verifiedAt": "2026-10-24T01:39:44.510Z",
-      "status": "new",
-      "firstSeenAt": "2026-10-24T01:39:44.510Z",
-      "lastSeenAt": "2026-10-24T01:39:44.510Z"
+      "exactApplyPage": true,
+      "exactPageTitle": "Data Analyst",
+      "applyButtonConfirmed": true,
+      "verifiedSource": "LinkedIn AU (Direct Apply Page)",
+      "verifiedAt": "2026-10-24T02:04:05.749Z"
     },
     {
       "id": "li_2",
@@ -808,19 +477,18 @@
       "postedTimestamp": 1791849600000,
       "description": "Join Altis Consulting in Melbourne, Victoria, Australia as a Senior Consultant – Data Engineer | Melbourne. Focus on delivering impactful data analytics, business intelligence dashboards, and data-driven insights.",
       "url": "https://au.linkedin.com/jobs/view/senior-consultant-%E2%80%93-data-engineer-melbourne-at-altis-consulting-4470294967?position=5&pageNum=0&refId=4qLJ6m8hyezjHV%2F1GOtivg%3D%3D&trackingId=KtvVtjGhmu1MmuFBM6%2Buxw%3D%3D",
-      "source": "LinkedIn AU",
+      "source": "LinkedIn AU (Direct Apply Page)",
       "tags": [
         "Melbourne",
         "R"
       ],
       "workType": "Hybrid",
-      "backupUrl": "https://www.seek.com.au/jobs?keywords=Senior%20Consultant%20Altis%20Consulting&where=All+Melbourne+VIC&sortmode=ListedDate",
       "verified": true,
-      "verifiedSource": "LinkedIn AU (Direct Post)",
-      "verifiedAt": "2026-10-24T01:39:44.510Z",
-      "status": "new",
-      "firstSeenAt": "2026-10-24T01:39:44.510Z",
-      "lastSeenAt": "2026-10-24T01:39:44.510Z"
+      "exactApplyPage": true,
+      "exactPageTitle": "Senior Consultant – Data Engineer | Melbourne",
+      "applyButtonConfirmed": true,
+      "verifiedSource": "LinkedIn AU (Direct Apply Page)",
+      "verifiedAt": "2026-10-24T02:04:06.978Z"
     },
     {
       "id": "li_4477646436",
@@ -834,19 +502,18 @@
       "postedTimestamp": 1791504000000,
       "description": "Join Monks in Melbourne, Victoria, Australia as a AI & Analytics Engineer. Focus on delivering impactful data analytics, business intelligence dashboards, and data-driven insights.",
       "url": "https://au.linkedin.com/jobs/view/ai-analytics-engineer-at-monks-4477646436?position=5&pageNum=0&refId=ZdNf1UmYlYAJBOj59BV90w%3D%3D&trackingId=53mAxxv%2B1livMHnSLmEu0g%3D%3D",
-      "source": "LinkedIn AU",
+      "source": "LinkedIn AU (Direct Apply Page)",
       "tags": [
         "Melbourne",
         "R"
       ],
       "workType": "Hybrid",
-      "backupUrl": "https://www.seek.com.au/jobs?keywords=AI%20%26%20Analytics%20Engineer%20Monks&where=All+Melbourne+VIC&sortmode=ListedDate",
       "verified": true,
-      "verifiedSource": "LinkedIn AU (Direct Post)",
-      "verifiedAt": "2026-10-24T01:39:44.510Z",
-      "status": "new",
-      "firstSeenAt": "2026-10-24T01:39:44.510Z",
-      "lastSeenAt": "2026-10-24T01:39:44.510Z"
+      "exactApplyPage": true,
+      "exactPageTitle": "AI & Analytics Engineer",
+      "applyButtonConfirmed": true,
+      "verifiedSource": "LinkedIn AU (Direct Apply Page)",
+      "verifiedAt": "2026-10-24T02:04:08.543Z"
     },
     {
       "id": "li_4475182377",
@@ -860,19 +527,18 @@
       "postedTimestamp": 1791331200000,
       "description": "Join ALH Hotels in Richmond, Victoria, Australia as a Senior Data Analyst - Workforce Planning. Focus on delivering impactful data analytics, business intelligence dashboards, and data-driven insights.",
       "url": "https://au.linkedin.com/jobs/view/senior-data-analyst-workforce-planning-at-alh-hotels-4475182377?position=7&pageNum=0&refId=JNyeQ26YTqLLU%2B4UGoJU1Q%3D%3D&trackingId=xdVpYdvuw%2BmzCsw4aNt6Lg%3D%3D",
-      "source": "LinkedIn AU",
+      "source": "LinkedIn AU (Direct Apply Page)",
       "tags": [
         "Melbourne",
         "R"
       ],
       "workType": "Hybrid",
-      "backupUrl": "https://www.seek.com.au/jobs?keywords=Senior%20Data%20Analyst%20ALH%20Hotels&where=All+Melbourne+VIC&sortmode=ListedDate",
       "verified": true,
-      "verifiedSource": "LinkedIn AU (Direct Post)",
-      "verifiedAt": "2026-10-24T01:39:44.510Z",
-      "status": "new",
-      "firstSeenAt": "2026-10-24T01:39:44.510Z",
-      "lastSeenAt": "2026-10-24T01:39:44.510Z"
+      "exactApplyPage": true,
+      "exactPageTitle": "Senior Data Analyst - Workforce Planning",
+      "applyButtonConfirmed": true,
+      "verifiedSource": "LinkedIn AU (Direct Apply Page)",
+      "verifiedAt": "2026-10-24T02:04:09.603Z"
     },
     {
       "id": "li_4476114952",
@@ -886,19 +552,18 @@
       "postedTimestamp": 1791244800000,
       "description": "Join Versent in Melbourne, Victoria, Australia as a Senior Data Analyst. Focus on delivering impactful data analytics, business intelligence dashboards, and data-driven insights.",
       "url": "https://au.linkedin.com/jobs/view/senior-data-analyst-at-versent-4476114952?position=1&pageNum=0&refId=SKx8ZHWwBrSj1elLAxBaaw%3D%3D&trackingId=64yuwG21ERlZMsZpoaWe6w%3D%3D",
-      "source": "LinkedIn AU",
+      "source": "LinkedIn AU (Direct Apply Page)",
       "tags": [
         "Melbourne",
         "R"
       ],
       "workType": "Hybrid",
-      "backupUrl": "https://www.seek.com.au/jobs?keywords=Senior%20Data%20Analyst%20Versent&where=All+Melbourne+VIC&sortmode=ListedDate",
       "verified": true,
-      "verifiedSource": "LinkedIn AU (Direct Post)",
-      "verifiedAt": "2026-10-24T01:39:44.510Z",
-      "status": "new",
-      "firstSeenAt": "2026-10-24T01:39:44.510Z",
-      "lastSeenAt": "2026-10-24T01:39:44.510Z"
+      "exactApplyPage": true,
+      "exactPageTitle": "Senior Data Analyst",
+      "applyButtonConfirmed": true,
+      "verifiedSource": "LinkedIn AU (Direct Apply Page)",
+      "verifiedAt": "2026-10-24T02:04:10.683Z"
     },
     {
       "id": "li_4475546890",
@@ -912,19 +577,18 @@
       "postedTimestamp": 1791158400000,
       "description": "Join Bunnings in Melbourne, Victoria, Australia as a Senior Data Engineer. Focus on delivering impactful data analytics, business intelligence dashboards, and data-driven insights.",
       "url": "https://au.linkedin.com/jobs/view/senior-data-engineer-at-bunnings-4475546890?position=2&pageNum=0&refId=4qLJ6m8hyezjHV%2F1GOtivg%3D%3D&trackingId=%2B5uere74QTNpDJy3MSnbIQ%3D%3D",
-      "source": "LinkedIn AU",
+      "source": "LinkedIn AU (Direct Apply Page)",
       "tags": [
         "Melbourne",
         "R"
       ],
       "workType": "Hybrid",
-      "backupUrl": "https://www.seek.com.au/jobs?keywords=Senior%20Data%20Engineer%20Bunnings&where=All+Melbourne+VIC&sortmode=ListedDate",
       "verified": true,
-      "verifiedSource": "LinkedIn AU (Direct Post)",
-      "verifiedAt": "2026-10-24T01:39:44.510Z",
-      "status": "new",
-      "firstSeenAt": "2026-10-24T01:39:44.510Z",
-      "lastSeenAt": "2026-10-24T01:39:44.510Z"
+      "exactApplyPage": true,
+      "exactPageTitle": "Senior Data Engineer",
+      "applyButtonConfirmed": true,
+      "verifiedSource": "LinkedIn AU (Direct Apply Page)",
+      "verifiedAt": "2026-10-24T02:04:11.939Z"
     },
     {
       "id": "li_4474242207",
@@ -938,19 +602,18 @@
       "postedTimestamp": 1791158400000,
       "description": "Join Talent Insights Group in Melbourne, Victoria, Australia as a Data Engineer. Focus on delivering impactful data analytics, business intelligence dashboards, and data-driven insights.",
       "url": "https://au.linkedin.com/jobs/view/data-engineer-at-talent-insights-group-4474242207?position=6&pageNum=0&refId=ZdNf1UmYlYAJBOj59BV90w%3D%3D&trackingId=P1a7zkJ97XspxyzxGOZbvg%3D%3D",
-      "source": "LinkedIn AU",
+      "source": "LinkedIn AU (Direct Apply Page)",
       "tags": [
         "Melbourne",
         "R"
       ],
       "workType": "Hybrid",
-      "backupUrl": "https://www.seek.com.au/jobs?keywords=Data%20Engineer%20Talent%20Insights%20Group&where=All+Melbourne+VIC&sortmode=ListedDate",
       "verified": true,
-      "verifiedSource": "LinkedIn AU (Direct Post)",
-      "verifiedAt": "2026-10-24T01:39:44.510Z",
-      "status": "new",
-      "firstSeenAt": "2026-10-24T01:39:44.510Z",
-      "lastSeenAt": "2026-10-24T01:39:44.510Z"
+      "exactApplyPage": true,
+      "exactPageTitle": "Data Engineer",
+      "applyButtonConfirmed": true,
+      "verifiedSource": "LinkedIn AU (Direct Apply Page)",
+      "verifiedAt": "2026-10-24T02:04:13.117Z"
     },
     {
       "id": "li_4475565036",
@@ -964,19 +627,18 @@
       "postedTimestamp": 1791158400000,
       "description": "Join Bunnings in Melbourne, Victoria, Australia as a Data Engineer. Focus on delivering impactful data analytics, business intelligence dashboards, and data-driven insights.",
       "url": "https://au.linkedin.com/jobs/view/data-engineer-at-bunnings-4475565036?position=8&pageNum=0&refId=ZdNf1UmYlYAJBOj59BV90w%3D%3D&trackingId=Ilj0ZYkUY%2FPy3iQCVmfgDA%3D%3D",
-      "source": "LinkedIn AU",
+      "source": "LinkedIn AU (Direct Apply Page)",
       "tags": [
         "Melbourne",
         "R"
       ],
       "workType": "Hybrid",
-      "backupUrl": "https://www.seek.com.au/jobs?keywords=Data%20Engineer%20Bunnings&where=All+Melbourne+VIC&sortmode=ListedDate",
       "verified": true,
-      "verifiedSource": "LinkedIn AU (Direct Post)",
-      "verifiedAt": "2026-10-24T01:39:44.510Z",
-      "status": "new",
-      "firstSeenAt": "2026-10-24T01:39:44.510Z",
-      "lastSeenAt": "2026-10-24T01:39:44.510Z"
+      "exactApplyPage": true,
+      "exactPageTitle": "Data Engineer",
+      "applyButtonConfirmed": true,
+      "verifiedSource": "LinkedIn AU (Direct Apply Page)",
+      "verifiedAt": "2026-10-24T02:04:14.265Z"
     },
     {
       "id": "li_4472143505",
@@ -990,7 +652,7 @@
       "postedTimestamp": 1790726400000,
       "description": "Join Aviato Consulting in Greater Melbourne Area as a Senior Backend Engineer (Python / GCP / Airflow). Focus on delivering impactful data analytics, business intelligence dashboards, and data-driven insights.",
       "url": "https://au.linkedin.com/jobs/view/senior-backend-engineer-python-gcp-airflow-at-aviato-consulting-4472143505?position=7&pageNum=0&refId=4qLJ6m8hyezjHV%2F1GOtivg%3D%3D&trackingId=%2BOXai9jTQpTDDavhSl4T%2BQ%3D%3D",
-      "source": "LinkedIn AU",
+      "source": "LinkedIn AU (Direct Apply Page)",
       "tags": [
         "Melbourne",
         "Python",
@@ -998,13 +660,12 @@
         "GCP"
       ],
       "workType": "Hybrid",
-      "backupUrl": "https://www.seek.com.au/jobs?keywords=Senior%20Backend%20Engineer%20Python%20Aviato%20Consulting&where=All+Melbourne+VIC&sortmode=ListedDate",
       "verified": true,
-      "verifiedSource": "LinkedIn AU (Direct Post)",
-      "verifiedAt": "2026-10-24T01:39:44.510Z",
-      "status": "new",
-      "firstSeenAt": "2026-10-24T01:39:44.510Z",
-      "lastSeenAt": "2026-10-24T01:39:44.510Z"
+      "exactApplyPage": true,
+      "exactPageTitle": "Senior Backend Engineer (Python / GCP / Airflow)",
+      "applyButtonConfirmed": true,
+      "verifiedSource": "LinkedIn AU (Direct Apply Page)",
+      "verifiedAt": "2026-10-24T02:04:14.861Z"
     },
     {
       "id": "li_4472491115",
@@ -1018,19 +679,18 @@
       "postedTimestamp": 1790553600000,
       "description": "Join Downer in Melbourne, Victoria, Australia as a Senior Customer Data Analyst. Focus on delivering impactful data analytics, business intelligence dashboards, and data-driven insights.",
       "url": "https://au.linkedin.com/jobs/view/senior-customer-data-analyst-at-downer-4472491115?position=6&pageNum=0&refId=SKx8ZHWwBrSj1elLAxBaaw%3D%3D&trackingId=90%2FQdR41NmvtP20tLjSd2A%3D%3D",
-      "source": "LinkedIn AU",
+      "source": "LinkedIn AU (Direct Apply Page)",
       "tags": [
         "Melbourne",
         "R"
       ],
       "workType": "Hybrid",
-      "backupUrl": "https://www.seek.com.au/jobs?keywords=Senior%20Customer%20Data%20Analyst%20Downer&where=All+Melbourne+VIC&sortmode=ListedDate",
       "verified": true,
-      "verifiedSource": "LinkedIn AU (Direct Post)",
-      "verifiedAt": "2026-10-24T01:39:44.510Z",
-      "status": "new",
-      "firstSeenAt": "2026-10-24T01:39:44.510Z",
-      "lastSeenAt": "2026-10-24T01:39:44.510Z"
+      "exactApplyPage": true,
+      "exactPageTitle": "Senior Customer Data Analyst",
+      "applyButtonConfirmed": true,
+      "verifiedSource": "LinkedIn AU (Direct Apply Page)",
+      "verifiedAt": "2026-10-24T02:04:16.291Z"
     },
     {
       "id": "li_4471851069",
@@ -1044,19 +704,18 @@
       "postedTimestamp": 1790294400000,
       "description": "Join Strikeforce AMC in Mount Waverley, Victoria, Australia as a Junior Data and Reporting Analyst. Focus on delivering impactful data analytics, business intelligence dashboards, and data-driven insights.",
       "url": "https://au.linkedin.com/jobs/view/junior-data-and-reporting-analyst-at-strikeforce-amc-4471851069?position=8&pageNum=0&refId=s4HLsU5rIF1zxDv%2FQmp0kw%3D%3D&trackingId=q6EXL0ZOcL48w8EzE2N15g%3D%3D",
-      "source": "LinkedIn AU",
+      "source": "LinkedIn AU (Direct Apply Page)",
       "tags": [
         "Melbourne",
         "R"
       ],
       "workType": "Hybrid",
-      "backupUrl": "https://www.seek.com.au/jobs?keywords=Junior%20Data%20and%20Reporting%20Analyst%20Strikeforce%20AMC&where=All+Melbourne+VIC&sortmode=ListedDate",
       "verified": true,
-      "verifiedSource": "LinkedIn AU (Direct Post)",
-      "verifiedAt": "2026-10-24T01:39:44.510Z",
-      "status": "new",
-      "firstSeenAt": "2026-10-24T01:39:44.510Z",
-      "lastSeenAt": "2026-10-24T01:39:44.510Z"
+      "exactApplyPage": true,
+      "exactPageTitle": "Junior Data and Reporting Analyst",
+      "applyButtonConfirmed": true,
+      "verifiedSource": "LinkedIn AU (Direct Apply Page)",
+      "verifiedAt": "2026-10-24T02:04:16.887Z"
     },
     {
       "id": "li_4463583491",
@@ -1070,19 +729,18 @@
       "postedTimestamp": 1788912000000,
       "description": "Join ProVision Eyecare in Mulgrave, Victoria, Australia as a Business Intelligence Analyst - ProVision. Focus on delivering impactful data analytics, business intelligence dashboards, and data-driven insights.",
       "url": "https://au.linkedin.com/jobs/view/business-intelligence-analyst-provision-at-provision-eyecare-4463583491?position=4&pageNum=0&refId=s4HLsU5rIF1zxDv%2FQmp0kw%3D%3D&trackingId=dQ3ScxwymzkycptKJ3Nz9g%3D%3D",
-      "source": "LinkedIn AU",
+      "source": "LinkedIn AU (Direct Apply Page)",
       "tags": [
         "Melbourne",
         "R"
       ],
       "workType": "Hybrid",
-      "backupUrl": "https://www.seek.com.au/jobs?keywords=Business%20Intelligence%20Analyst%20ProVision%20Eyecare&where=All+Melbourne+VIC&sortmode=ListedDate",
       "verified": true,
-      "verifiedSource": "LinkedIn AU (Direct Post)",
-      "verifiedAt": "2026-10-24T01:39:44.510Z",
-      "status": "new",
-      "firstSeenAt": "2026-10-24T01:39:44.510Z",
-      "lastSeenAt": "2026-10-24T01:39:44.510Z"
+      "exactApplyPage": true,
+      "exactPageTitle": "Business Intelligence Analyst - ProVision",
+      "applyButtonConfirmed": true,
+      "verifiedSource": "LinkedIn AU (Direct Apply Page)",
+      "verifiedAt": "2026-10-24T02:04:18.103Z"
     },
     {
       "id": "li_4460805059",
@@ -1096,19 +754,18 @@
       "postedTimestamp": 1787961600000,
       "description": "Join GRIDSIGHT in Melbourne, Victoria, Australia as a Global Customer Data Analyst. Focus on delivering impactful data analytics, business intelligence dashboards, and data-driven insights.",
       "url": "https://au.linkedin.com/jobs/view/global-customer-data-analyst-at-gridsight-4460805059?position=2&pageNum=0&refId=SKx8ZHWwBrSj1elLAxBaaw%3D%3D&trackingId=vuEwHo8gpk3giXVCgEzZ7w%3D%3D",
-      "source": "LinkedIn AU",
+      "source": "LinkedIn AU (Direct Apply Page)",
       "tags": [
         "Melbourne",
         "R"
       ],
       "workType": "Hybrid",
-      "backupUrl": "https://www.seek.com.au/jobs?keywords=Global%20Customer%20Data%20Analyst%20GRIDSIGHT&where=All+Melbourne+VIC&sortmode=ListedDate",
       "verified": true,
-      "verifiedSource": "LinkedIn AU (Direct Post)",
-      "verifiedAt": "2026-10-24T01:39:44.510Z",
-      "status": "new",
-      "firstSeenAt": "2026-10-24T01:39:44.510Z",
-      "lastSeenAt": "2026-10-24T01:39:44.510Z"
+      "exactApplyPage": true,
+      "exactPageTitle": "Global Customer Data Analyst",
+      "applyButtonConfirmed": true,
+      "verifiedSource": "LinkedIn AU (Direct Apply Page)",
+      "verifiedAt": "2026-10-24T02:04:19.222Z"
     },
     {
       "id": "li_4438470664",
@@ -1122,19 +779,18 @@
       "postedTimestamp": 1784160000000,
       "description": "Join Insight Timer in Melbourne, Victoria, Australia as a Senior / Lead Analytics Engineer. Focus on delivering impactful data analytics, business intelligence dashboards, and data-driven insights.",
       "url": "https://au.linkedin.com/jobs/view/senior-lead-analytics-engineer-at-insight-timer-4438470664?position=1&pageNum=0&refId=ZdNf1UmYlYAJBOj59BV90w%3D%3D&trackingId=%2FVkPsaeVAvplgFI80HT0YA%3D%3D",
-      "source": "LinkedIn AU",
+      "source": "LinkedIn AU (Direct Apply Page)",
       "tags": [
         "Melbourne",
         "R"
       ],
       "workType": "Hybrid",
-      "backupUrl": "https://www.seek.com.au/jobs?keywords=Senior%20Insight%20Timer&where=All+Melbourne+VIC&sortmode=ListedDate",
       "verified": true,
-      "verifiedSource": "LinkedIn AU (Direct Post)",
-      "verifiedAt": "2026-10-24T01:39:44.510Z",
-      "status": "new",
-      "firstSeenAt": "2026-10-24T01:39:44.510Z",
-      "lastSeenAt": "2026-10-24T01:39:44.510Z"
+      "exactApplyPage": true,
+      "exactPageTitle": "Senior / Lead Analytics Engineer",
+      "applyButtonConfirmed": true,
+      "verifiedSource": "LinkedIn AU (Direct Apply Page)",
+      "verifiedAt": "2026-10-24T02:04:19.845Z"
     }
   ],
   "scanHistory": [

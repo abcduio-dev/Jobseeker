@@ -1,0 +1,35 @@
+{
+  "name": "jobseeker-melbourne",
+  "version": "1.0.0",
+  "description": "Melbourne Australia Job Scanner and Email Alert System for Data Analysts, BI Analysts, and Data Engineers",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node server/index.js",
+    "scan": "node scripts/run_scan.js",
+    "scan:notify": "node scripts/run_scan.js --notify",
+    "github:setup": "bash scripts/setup_github.sh"
+  },
+  "keywords": [
+    "melbourne",
+    "australia",
+    "jobseeker",
+    "data-analyst",
+    "bi-analyst",
+    "data-engineer",
+    "seek",
+    "linkedin",
+    "email-alerts"
+  ],
+  "author": "abcduio-dev",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "cheerio": "^1.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "node-cron": "^3.0.3",
+    "nodemailer": "^6.9.15"
+  }
+}

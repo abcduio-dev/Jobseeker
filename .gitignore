@@ -1,0 +1,17 @@
+# Dependencies
+node_modules/
+
+# Environment
+.env
+.env.local
+
+# Data and Logs
+data/*.tmp.*
+*.log
+npm-debug.log*
+
+# System & OS
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

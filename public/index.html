@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Melbourne Australia Job Scanner & Daily Email Alert System for Data Analysts, BI Analysts, and Data Engineers.">
+  <title>Melbourne JobSeeker | Data & Analytics Career Scanner</title>
+  
+  <!-- Modern Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="app-container">
+    
+    <!-- Top Navigation Header -->
+    <header class="top-header">
+      <div class="header-left">
+        <div class="brand-logo">
+          <div class="logo-icon">🇦🇺</div>
+          <div class="brand-text">
+            <span class="brand-title">Melbourne <span class="gradient-text">JobSeeker</span></span>
+            <span class="brand-subtitle">Data & BI Analytics Scanner</span>
+          </div>
+        </div>
+
+        <div class="melbourne-time-badge" id="melbourneClockBadge">
+          <span class="pulse-dot"></span>
+          <span class="clock-icon">🕒</span>
+          <span id="melbourneClock">Melbourne: Loading...</span>
+        </div>
+      </div>
+
+      <div class="header-right">
+        <div class="scheduler-pill" id="schedulerPill">
+          <span class="status-indicator active"></span>
+          <span id="schedulerStatusText">Daily at 08:30 AM AEDT</span>
+        </div>
+
+        <button id="btnScanNow" class="btn btn-primary" title="Trigger an immediate scan of Seek, LinkedIn, and Melbourne portals">
+          <span class="btn-icon">⚡</span>
+          <span class="btn-label">Scan Jobs Now</span>
+        </button>
+
+        <button id="btnSendDigestNow" class="btn btn-secondary" title="Dispatch email digest of new jobs immediately">
+          <span class="btn-icon">✉️</span>
+          <span class="btn-label">Send Email Now</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Metrics Stat Bar -->
+    <section class="metrics-grid">
+      <div class="metric-card glass-panel">
+        <div class="metric-icon blue">💼</div>
+        <div class="metric-data">
+          <div class="metric-value" id="statTotalJobs">0</div>
+          <div class="metric-label">Total Jobs Scanned</div>
+        </div>
+        <div class="metric-subtext">Active in database</div>
+      </div>
+
+      <div class="metric-card glass-panel">
+        <div class="metric-icon emerald">✨</div>
+        <div class="metric-data">
+          <div class="metric-value" id="statNewJobs">0</div>
+          <div class="metric-label">New Roles (24h)</div>
+        </div>
+        <div class="metric-subtext">Fresh Melbourne listings</div>
+      </div>
+
+      <div class="metric-card glass-panel">
+        <div class="metric-icon purple">💰</div>
+        <div class="metric-data">
+          <div class="metric-value" id="statAvgSalary">$125k - $160k</div>
+          <div class="metric-label">Avg Melbourne AUD</div>
+        </div>
+        <div class="metric-subtext">+ 11.5% Superannuation</div>
+      </div>
+
+      <div class="metric-card glass-panel">
+        <div class="metric-icon amber">⏰</div>
+        <div class="metric-data">
+          <div class="metric-value" id="statNextAlert">08:30 AM</div>
+          <div class="metric-label">Next Scheduled Alert</div>
+        </div>
+        <div class="metric-subtext" id="statAlertRecipient">To: Not configured</div>
+      </div>
+    </section>
+
+    <!-- Main App Navigation Tabs -->
+    <nav class="nav-tabs-bar">
+      <div class="tabs-container">
+        <button class="nav-tab active" data-tab="jobsTab">
+          <span class="tab-icon">📋</span>
+          <span>Jobs Feed</span>
+          <span class="badge" id="tabJobsCount">0</span>
+        </button>
+        <button class="nav-tab" data-tab="settingsTab">
+          <span class="tab-icon">⚙️</span>
+          <span>Alerts & Schedule Settings</span>
+        </button>
+        <button class="nav-tab" data-tab="previewTab">
+          <span class="tab-icon">✉️</span>
+          <span>Email Digest Preview</span>
+        </button>
+        <button class="nav-tab" data-tab="portalsTab">
+          <span class="tab-icon">🔍</span>
+          <span>Direct Seek Portals</span>
+        </button>
+        <button class="nav-tab" data-tab="historyTab">
+          <span class="tab-icon">📜</span>
+          <span>Scan & Delivery History</span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Tab 1: Jobs Feed Explorer -->
+    <main id="jobsTab" class="tab-pane active">
+      <!-- Search & Filters Bar -->
+      <div class="filters-panel glass-panel">
+        <div class="search-input-group">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="jobSearchInput" placeholder="Search by role, company, skills (e.g. SQL, Power BI, Snowflake, NAB, ANZ)..." />
+          <button id="btnClearSearch" class="btn-clear hidden">✕</button>
+        </div>
+
+        <div class="filter-controls">
+          <div class="filter-item">
+            <label for="filterWorkType">Work Type:</label>
+            <select id="filterWorkType">
+              <option value="All">All Types</option>
+              <option value="Hybrid">Hybrid (Melbourne)</option>
+              <option value="Remote">Remote</option>
+              <option value="On-site">On-site</option>
+            </select>
+          </div>
+
+          <div class="filter-item">
+            <label for="filterSource">Source:</label>
+            <select id="filterSource">
+              <option value="All">All Portals</option>
+              <option value="Seek">Seek AU</option>
+              <option value="LinkedIn">LinkedIn AU</option>
+              <option value="Adzuna">Adzuna</option>
+              <option value="Direct">Direct Employers</option>
+            </select>
+          </div>
+
+          <div class="filter-item">
+            <label for="filterStatus">Status:</label>
+            <select id="filterStatus">
+              <option value="All">All Jobs</option>
+              <option value="new">New / Un-emailed</option>
+              <option value="saved">Bookmarked / Saved</option>
+              <option value="emailed">Emailed in Digest</option>
+              <option value="applied">Applied</option>
+            </select>
+          </div>
+
+          <div class="filter-item">
+            <label for="filterMinSalary">Min Salary (AUD):</label>
+            <select id="filterMinSalary">
+              <option value="0">Any Salary</option>
+              <option value="100000">$100k+ AUD</option>
+              <option value="120000">$120k+ AUD</option>
+              <option value="140000">$140k+ AUD</option>
+              <option value="160000">$160k+ AUD</option>
+            </select>
+          </div>
+
+          <div class="filter-item">
+            <label for="filterSort">Sort By:</label>
+            <select id="filterSort">
+              <option value="newest">Most Recent</option>
+              <option value="salary_high">Highest Salary</option>
+              <option value="title">Job Title (A-Z)</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Jobs Grid Container -->
+      <div id="jobsGrid" class="jobs-grid">
+        <div class="loading-state">
+          <div class="spinner"></div>
+          <p>Scanning Australian job portals for Data & BI roles in Melbourne...</p>
+        </div>
+      </div>
+
+      <!-- Empty State -->
+      <div id="emptyState" class="empty-state hidden">
+        <div class="empty-icon">🔎</div>
+        <h3>No jobs matched your current filters</h3>
+        <p>Try clearing your search filters or click "Scan Jobs Now" to fetch the latest postings.</p>
+        <button id="btnResetFilters" class="btn btn-secondary">Reset Filters</button>
+      </div>
+    </main>
+
+    <!-- Tab 2: Settings & Schedule -->
+    <section id="settingsTab" class="tab-pane hidden">
+      <div class="settings-layout">
+        
+        <!-- Left: Alert Schedule & Frequency -->
+        <div class="settings-card glass-panel">
+          <div class="card-header">
+            <div class="card-title">
+              <span class="card-icon">⏰</span>
+              <h3>Email Schedule & Frequency</h3>
+            </div>
+            <label class="switch">
+              <input type="checkbox" id="settingScheduleEnabled" checked>
+              <span class="slider round"></span>
+            </label>
+          </div>
+
+          <div class="card-body">
+            <p class="section-desc">Choose when and how often you want the Melbourne JobSeeker scanner to deliver job digests to your inbox.</p>
+
+            <div class="form-group">
+              <label for="settingFrequency">Delivery Frequency:</label>
+              <select id="settingFrequency" class="form-select">
+                <option value="daily">Daily Digest (Once per day)</option>
+                <option value="twice_daily">Twice Daily (Morning & Evening)</option>
+                <option value="every_6_hours">Every 6 Hours</option>
+                <option value="every_12_hours">Every 12 Hours</option>
+                <option value="weekly">Weekly Summary (Every Monday)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="settingTimeOfDay">Preferred Delivery Time (Melbourne AEDT):</label>
+              <div class="time-input-wrap">
+                <input type="time" id="settingTimeOfDay" class="form-input" value="08:30" />
+                <span class="input-hint">Default 08:30 AM catches new overnight & morning postings before your workday begins.</span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="settingRecipientEmail">Recipient Email Address:</label>
+              <input type="email" id="settingRecipientEmail" class="form-input" placeholder="e.g. your.name@gmail.com" />
+              <span class="input-hint">All job digests will be delivered to this inbox.</span>
+            </div>
+
+            <div class="form-group checkbox-group">
+              <label class="checkbox-label">
+                <input type="checkbox" id="settingSendOnlyNew" checked>
+                <span>Only include newly discovered jobs (prevents duplicates)</span>
+              </label>
+            </div>
+
+            <div class="form-group">
+              <label for="settingMaxJobs">Max Jobs Per Digest:</label>
+              <input type="number" id="settingMaxJobs" class="form-input" value="25" min="5" max="50" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Target Roles & Criteria -->
+        <div class="settings-card glass-panel">
+          <div class="card-header">
+            <div class="card-title">
+              <span class="card-icon">🎯</span>
+              <h3>Target Job Titles & Melbourne Criteria</h3>
+            </div>
+          </div>
+
+          <div class="card-body">
+            <p class="section-desc">Manage the target job titles that the scanner searches across Seek and LinkedIn Australia.</p>
+
+            <div class="form-group">
+              <label>Active Target Titles:</label>
+              <div class="tags-editor" id="targetTitlesEditor">
+                <!-- Injected dynamically -->
+              </div>
+              <div class="add-tag-wrap">
+                <input type="text" id="newTitleInput" class="form-input" placeholder="Add custom title (e.g. Lead Analytics Engineer)..." />
+                <button id="btnAddTitle" class="btn btn-sm btn-secondary">+ Add Title</button>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="settingLocation">Target Location:</label>
+              <input type="text" id="settingLocation" class="form-input" value="Melbourne VIC, Australia" />
+            </div>
+
+            <div class="form-group">
+              <label for="settingMinSalaryPref">Minimum Salary Expectation (AUD):</label>
+              <div class="salary-slider-wrap">
+                <input type="range" id="settingMinSalaryPref" min="80000" max="180000" step="5000" value="100000" class="slider-range">
+                <div class="slider-val-display" id="salaryDisplayVal">$100,000 AUD</div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Target Skills Keywords (for highlighting):</label>
+              <div class="skills-tags-display" id="skillsKeywordsEditor">
+                <!-- Injected dynamically -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Full: Email Server / SMTP Settings -->
+        <div class="settings-card glass-panel full-width">
+          <div class="card-header">
+            <div class="card-title">
+              <span class="card-icon">📧</span>
+              <h3>Email Delivery & SMTP Configuration</h3>
+            </div>
+            <button id="btnSendTestEmail" class="btn btn-outline">
+              <span class="btn-icon">📨</span> Send Test Email
+            </button>
+          </div>
+
+          <div class="card-body">
+            <div class="smtp-help-box">
+              <strong>💡 Quick Setup for Gmail:</strong>
+              <ol>
+                <li>Host: <code>smtp.gmail.com</code> | Port: <code>587</code></li>
+                <li>Username: Your full Gmail address (e.g. <code>you@gmail.com</code>)</li>
+                <li>Password: Generate a 16-character <strong>Google App Password</strong> in your Google Account Security settings. (Do not use your regular login password).</li>
+              </ol>
+            </div>
+
+            <div class="form-row-grid">
+              <div class="form-group">
+                <label for="smtpHost">SMTP Host:</label>
+                <input type="text" id="smtpHost" class="form-input" placeholder="smtp.gmail.com" />
+              </div>
+
+              <div class="form-group">
+                <label for="smtpPort">SMTP Port:</label>
+                <input type="number" id="smtpPort" class="form-input" placeholder="587" />
+              </div>
+
+              <div class="form-group">
+                <label for="smtpUser">SMTP Username / Email:</label>
+                <input type="text" id="smtpUser" class="form-input" placeholder="your.name@gmail.com" />
+              </div>
+
+              <div class="form-group">
+                <label for="smtpPass">SMTP App Password:</label>
+                <input type="password" id="smtpPass" class="form-input" placeholder="••••••••••••••••" />
+              </div>
+            </div>
+
+            <div class="form-actions">
+              <button id="btnSaveSettings" class="btn btn-primary btn-large">
+                <span class="btn-icon">💾</span> Save All Settings & Reschedule
+              </button>
+              <span id="saveSettingsFeedback" class="save-feedback"></span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Tab 3: Email Digest Live Preview -->
+    <section id="previewTab" class="tab-pane hidden">
+      <div class="preview-panel glass-panel">
+        <div class="preview-toolbar">
+          <div class="preview-toolbar-left">
+            <h3>Live Email Digest Preview</h3>
+            <span class="preview-hint">This is an exact preview of the responsive HTML email delivered to your inbox.</span>
+          </div>
+          <div class="preview-toolbar-right">
+            <button id="btnRefreshPreview" class="btn btn-outline">🔄 Refresh Preview</button>
+            <button id="btnSendPreviewDigest" class="btn btn-primary">✉️ Send This Digest Now</button>
+          </div>
+        </div>
+
+        <div class="preview-frame-wrap">
+          <iframe id="emailPreviewFrame" title="Email Digest Preview" src="/api/email/preview"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tab 4: Direct Seek & Job Portals -->
+    <section id="portalsTab" class="tab-pane hidden">
+      <div class="portals-panel glass-panel">
+        <div class="portals-header">
+          <h3>Direct 1-Click Melbourne Job Searches</h3>
+          <p>Instantly launch pre-filtered, date-sorted job searches across Seek Australia, Indeed AU, and LinkedIn AU.</p>
+        </div>
+
+        <div class="portals-grid" id="portalsGrid">
+          <!-- Dynamically populated -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Tab 5: Scan & Delivery History -->
+    <section id="historyTab" class="tab-pane hidden">
+      <div class="history-layout">
+        
+        <div class="history-card glass-panel">
+          <div class="card-header">
+            <div class="card-title">
+              <span class="card-icon">🔍</span>
+              <h3>Recent Scan History</h3>
+            </div>
+          </div>
+          <div class="table-responsive">
+            <table class="data-table" id="scansTable">
+              <thead>
+                <tr>
+                  <th>Timestamp</th>
+                  <th>Roles Queried</th>
+                  <th>Jobs Found</th>
+                  <th>New Added</th>
+                  <th>Duration</th>
+                </tr>
+              </thead>
+              <tbody id="scansTableBody">
+                <!-- Dynamically populated -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="history-card glass-panel">
+          <div class="card-header">
+            <div class="card-title">
+              <span class="card-icon">📬</span>
+              <h3>Email Delivery Logs</h3>
+            </div>
+          </div>
+          <div class="table-responsive">
+            <table class="data-table" id="emailsTable">
+              <thead>
+                <tr>
+                  <th>Timestamp</th>
+                  <th>Recipient</th>
+                  <th>Jobs Included</th>
+                  <th>Status</th>
+                  <th>Info</th>
+                </tr>
+              </thead>
+              <tbody id="emailsTableBody">
+                <!-- Dynamically populated -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Job Details Modal -->
+    <div id="jobDetailModal" class="modal hidden">
+      <div class="modal-backdrop"></div>
+      <div class="modal-container glass-panel">
+        <div class="modal-header">
+          <div class="modal-title-wrap">
+            <span class="modal-company" id="modalCompany">Company Name</span>
+            <h2 class="modal-title" id="modalTitle">Job Title</h2>
+            <div class="modal-meta-row">
+              <span class="badge badge-salary" id="modalSalary">$130,000 - $155,000 AUD</span>
+              <span class="badge badge-location" id="modalLocation">📍 Melbourne VIC</span>
+              <span class="badge badge-date" id="modalDate">📅 Today</span>
+              <span class="badge badge-source" id="modalSource">Seek AU</span>
+            </div>
+          </div>
+          <button id="btnCloseModal" class="modal-close-btn">&times;</button>
+        </div>
+
+        <div class="modal-body">
+          <div class="modal-section">
+            <h4>Role Overview & Responsibilities</h4>
+            <div class="modal-description" id="modalDescription"></div>
+          </div>
+
+          <div class="modal-section">
+            <h4>Key Skills & Requirements</h4>
+            <div class="modal-tags" id="modalTags"></div>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button id="btnModalSave" class="btn btn-secondary">⭐ Save / Bookmark</button>
+          <button id="btnModalApplied" class="btn btn-secondary">✅ Mark as Applied</button>
+          <a id="btnModalApplyLink" href="#" target="_blank" class="btn btn-primary">
+            Apply on Job Portal ↗
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Toast Notification Container -->
+    <div id="toastContainer" class="toast-container"></div>
+
+  </div>
+
+  <script src="js/api.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -200,11 +200,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
           <div style="display:flex;gap:6px;align-items:center;">
             <a href="${job.url}" target="_blank" class="btn btn-sm btn-primary">
-              Apply on ${escapeHtml(job.source ? job.source.split(' ')[0] : 'Seek')} ↗
+              ${job.url.includes('linkedin.com') ? 'Apply on LinkedIn ↗' : (job.url.includes('seek.com.au') ? 'Apply on Seek AU ↗' : `Apply at ${escapeHtml(job.company.split(' ')[0])} ↗`)}
             </a>
             ${job.backupUrl ? `
               <a href="${job.backupUrl}" target="_blank" class="btn btn-sm btn-secondary" title="Alternate verified application link">
-                Backup ↗
+                ${job.backupUrl.includes('seek.com.au') ? 'Seek AU ↗' : 'LinkedIn ↗'}
               </a>
             ` : ''}
           </div>
@@ -264,12 +264,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const applyLink = document.getElementById('btnModalApplyLink');
     applyLink.href = job.url;
-    applyLink.textContent = `Apply on ${job.source || 'Job Portal'} ↗`;
+    applyLink.textContent = job.url.includes('linkedin.com') ? 'Apply on LinkedIn ↗' : (job.url.includes('seek.com.au') ? 'Apply on Seek AU ↗' : `Apply at ${job.company.split(' ')[0]} ↗`);
 
     const backupLink = document.getElementById('btnModalBackupLink');
     if (backupLink) {
       if (job.backupUrl) {
         backupLink.href = job.backupUrl;
+        backupLink.textContent = job.backupUrl.includes('seek.com.au') ? 'Seek AU Search ↗' : 'Alternative Source ↗';
         backupLink.classList.remove('hidden');
       } else {
         backupLink.classList.add('hidden');

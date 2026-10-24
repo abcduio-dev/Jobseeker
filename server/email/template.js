@@ -78,12 +78,12 @@ function generateEmailHtml(jobs = [], options = {}) {
                 </td>
                 <td align="right" style="vertical-align: middle; white-space: nowrap; padding-left: 12px;">
                   <a href="${job.url}" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #2563eb, #3b82f6); color: #ffffff; text-decoration: none; font-size: 13px; font-weight: 600; padding: 10px 18px; border-radius: 8px; box-shadow: 0 2px 4px rgba(37, 99, 235, 0.3);">
-                    Apply on ${job.source || 'Seek AU'} →
+                    ${job.url.includes('linkedin.com') ? 'Apply on LinkedIn →' : (job.url.includes('seek.com.au') ? 'Apply on Seek AU →' : `Apply at ${(job.company || '').split(' ')[0]} →`)}
                   </a>
                   ${job.backupUrl ? `
                     <div style="margin-top: 6px; text-align: right;">
                       <a href="${job.backupUrl}" target="_blank" style="font-size: 11px; color: #38bdf8; text-decoration: underline;">
-                        Backup Link ↗
+                        ${job.backupUrl.includes('seek.com.au') ? 'Seek AU Search ↗' : 'Alternative Search ↗'}
                       </a>
                     </div>
                   ` : ''}
